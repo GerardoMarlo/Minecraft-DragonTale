@@ -1,0 +1,86 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pavao.walk": {
+			"loop": true,
+			"animation_length": 0.64,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [75, 0, 0],
+						"0.3167": [0, 0, 0],
+						"0.4833": [-75, 0, 0],
+						"0.6333": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [-75, 0, 0],
+						"0.3167": [0, 0, 0],
+						"0.4833": [75, 0, 0],
+						"0.6333": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.pavao.sit": {
+			"loop": true,
+			"bones": {
+				"tail1": {
+					"rotation": [0, -10, 0]
+				},
+				"tail2": {
+					"rotation": [0, -65, 0],
+					"position": [1, 0, -1]
+				},
+				"tail3": {
+					"rotation": [0, 65, 0]
+				},
+				"tailbase": {
+					"rotation": [95, 0, 0],
+					"position": [0, 2, 9]
+				}
+			}
+		},
+		"animation.pavao.setup": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"body0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tailbase": {
+					"scale": [1, 1, 1.8]
+				}
+			}
+		}
+	}
+}

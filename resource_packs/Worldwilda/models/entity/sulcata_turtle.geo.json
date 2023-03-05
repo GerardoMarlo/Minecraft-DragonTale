@@ -1,0 +1,77 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sulcata_turtle",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 3, -6], "size": [12, 10, 14], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "root",
+					"pivot": [0, 6.5, -6],
+					"cubes": [
+						{"origin": [-2.5, 6, -12], "size": [5, 3, 6], "uv": [0, 24]}
+					]
+				},
+				{
+					"name": "jaw",
+					"parent": "head",
+					"pivot": [0, 4, -6],
+					"cubes": [
+						{"origin": [-2.5, 4, -12], "size": [5, 2, 6], "uv": [22, 24]}
+					]
+				},
+				{
+					"name": "leg0",
+					"parent": "root",
+					"pivot": [4.5, 4, -3.5],
+					"cubes": [
+						{"origin": [-6, 0, -5], "size": [3, 4, 3], "pivot": [-4.5, 4, -3.5], "rotation": [-27.5, 0, 22.5], "uv": [31, 32], "mirror": true}
+					]
+				},
+				{
+					"name": "leg1",
+					"parent": "root",
+					"pivot": [-4.5, 4, -3.5],
+					"cubes": [
+						{"origin": [3, 0, -5], "size": [3, 4, 3], "pivot": [4.5, 4, -3.5], "rotation": [-27.5, 0, -22.5], "uv": [31, 32]}
+					]
+				},
+				{
+					"name": "leg2",
+					"parent": "root",
+					"pivot": [-4.5, 4, 4.5],
+					"cubes": [
+						{"origin": [-6, 0, 4], "size": [3, 4, 3], "pivot": [-4.5, 4, 4.5], "rotation": [22.5, 0, 20], "uv": [0, 7]}
+					]
+				},
+				{
+					"name": "leg3",
+					"parent": "root",
+					"pivot": [4.5, 4, 4.5],
+					"cubes": [
+						{"origin": [3, 0, 4], "size": [3, 4, 3], "pivot": [4.5, 4, 4.5], "rotation": [22.5, 0, -20], "uv": [0, 7], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

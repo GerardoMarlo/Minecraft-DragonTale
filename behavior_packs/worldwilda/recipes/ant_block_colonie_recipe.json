@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "m:ant_block_colonie_recipe"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#",
+      "x",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "m:ant_block"
+      },
+      "x": {
+      "item": "m:larvae"
+      }
+    },
+    "result": {
+      "item": "m:ant_block_colonie",
+            "count": 1
+    }
+  }
+}

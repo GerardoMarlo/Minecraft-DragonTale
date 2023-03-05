@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:fennec",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/fennec"
+			},
+			"geometry": {
+				"default": "geometry.fennec"
+			},
+			"animations": {
+			"walk": "animation.fennec.walk",
+			"idle": "animation.fennec.idle",
+			"sit": "animation.fennec.sit",
+			"sitt": "controller.animation.sit",
+			  "look_at_target": "animation.common.look_at_target"
+			},
+			   "scripts": {
+        "animate": [
+        "sitt",
+          "look_at_target",
+             { "walk": "query.modified_move_speed*2" },
+             "idle"
+          ]
+        },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#9b9162",
+				"overlay_color": "#dad7c8"
+			}
+		}
+	}
+}

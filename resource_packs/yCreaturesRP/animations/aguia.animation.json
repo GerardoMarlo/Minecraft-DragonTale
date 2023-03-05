@@ -1,0 +1,98 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.aguia.walk": {
+			"loop": true,
+			"animation_length": 0.96,
+			"bones": {
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [70, 0, 0],
+						"0.4833": [0, 0, 0],
+						"0.7167": [-50, 0, 0],
+						"0.9667": [0, 0, 0]
+					}
+				},
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [-50, 0, 0],
+						"0.4833": [0, 0, 0],
+						"0.7167": [70, 0, 0],
+						"0.9667": [0, 0, 0]
+					}
+				},
+				"wing1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4833": [0, 0, -10],
+						"0.9667": [0, 0, 0]
+					}
+				},
+				"wing0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4833": [0, 0, 10],
+						"0.9667": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.aguia.climb": {
+			"loop": true,
+			"animation_length": 0.96,
+			"bones": {
+				"bodyb": {
+					"rotation": [-25, 0, 0]
+				},
+				"leg1": {
+					"rotation": [-50, 0, 0],
+					"position": [0, 1, 0]
+				},
+				"leg0": {
+					"rotation": [-50, 0, 0],
+					"position": [0, 1, 0]
+				},
+				"head": {
+					"rotation": [20, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing1": {
+					"rotation": {
+						"0.0": [0, 0, -80],
+						"0.2333": [0, 0, -25],
+						"0.4833": [0, 0, -80],
+						"0.7167": [0, 0, -145],
+						"0.9667": [0, 0, -80]
+					},
+					"position": [-1, -1, 0]
+				},
+				"wing0": {
+					"rotation": {
+						"0.0": [0, 0, 80],
+						"0.2333": [0, 0, 25],
+						"0.4833": [0, 0, 80],
+						"0.7167": [0, 0, 145],
+						"0.9667": [0, 0, 80]
+					},
+					"position": [1, -1, 0]
+				},
+				"wing0a": {
+					"rotation": [0, 105, 0]
+				},
+				"wing1a": {
+					"rotation": [0, -105, 0]
+				}
+			}
+		},
+		"animation.aguia.look_at_target": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": ["-25+query.target_x_rotation - this", "query.target_y_rotation - this", 0]
+				}
+			}
+		}
+	}
+}

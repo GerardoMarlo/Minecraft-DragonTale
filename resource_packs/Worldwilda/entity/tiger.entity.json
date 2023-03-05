@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:tiger",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/tiger"
+			},
+			"geometry": {
+				"default": "geometry.tiger"
+			},
+			"animations": {
+			"walk": "animation.tiger.walk",
+			"baby": "animation.tiger.baby",
+			"idle": "animation.tiger.idle",
+			"pounce": "animation.tiger.pounce",
+			"wiggle": "animation.tiger.wiggle",
+			"crouch": "animation.tiger.crouch",
+            "move": "controller.animation.tiger.move",
+	        "look_at_target": "animation.common.look_at_target"
+			},
+			   "scripts": {
+        "animate": [
+        { "baby": "query.is_baby" },
+         "idle",
+         "move",
+        { "walk": "query.modified_move_speed*1" },
+         "look_at_target"
+        ]
+      },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#ba6700",
+				"overlay_color": "#393939"
+			}
+		}
+	}
+}

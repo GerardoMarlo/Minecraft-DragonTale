@@ -1,0 +1,44 @@
+{
+	"horn_block": {
+		"sound": "calcite"
+	},
+	"water_container": {
+		"sound": "copper"
+	},
+	"empty_water_container": {
+		"sound": "copper"
+	},
+	"ant_block": {
+		"sound": "azalea"
+	},
+	"ant_block_colonie": {
+		"sound": "azalea"
+	},
+	"ant_block_full": {
+		"sound": "azalea"
+	},
+	"venus": {
+		"sound": "grass"
+	},
+	"dry_grass": {
+		"sound": "grass"
+	},
+	"cactus_flower": {
+		"sound": "azalea"
+	},
+	"purple_flower_cactus": {
+		"sound": "azalea"
+	},
+	"double_cactus": {
+		"sound": "azalea"
+	},
+	"penguin_egg": {
+		"sound": "stone"
+	},
+	"cassowary_egg": {
+		"sound": "stone"
+	},
+	"grid_fence": {
+		"sound": "calcite"
+	}
+}

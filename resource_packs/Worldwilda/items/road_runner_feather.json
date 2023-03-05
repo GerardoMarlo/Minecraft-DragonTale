@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:road_runner_feather",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "m:road_runner_feather",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

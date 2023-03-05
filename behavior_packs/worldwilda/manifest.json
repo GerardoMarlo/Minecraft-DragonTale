@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "made by enduringcell642",
+        "name": "world wild animals Behavior Pack",
+        "uuid": "7de04fb1-57c6-4379-b397-e489fff33ef0",
+        "version": [ 0, 0, 1 ],
+        "min_engine_version": [ 1, 19, 20 ]
+    },
+    "modules": [
+        {
+            "description": "world wild animals behavior pack",
+            "type": "data",
+            "uuid": "b6424965-55b6-4606-af6c-d6323928b7d9",
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "ddc7e914-997b-4479-ad6d-a3692c80f4d2",
+            "version": [0, 0, 1]
+        }
+    ]
+}

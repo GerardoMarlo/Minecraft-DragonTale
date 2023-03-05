@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:aardvark",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/aardvark"
+			},
+			"geometry": {
+				"default": "geometry.aardvark"
+			},
+			"animations": {
+			"walk": "animation.aardvark.walk",
+			"sit": "animation.aardvark.sit",
+			"sleep": "animation.aardvark.sleep",
+			  "sitt": "controller.animation.sit",
+	        "look_at_target": "animation.common.look_at_target"
+			},
+			   "scripts": {
+        "animate": [
+        "sitt",
+        { "walk": "query.modified_move_speed*2" },
+        { "sleep": "query.is_sleeping" },
+        { "look_at_target": "!query.is_sleeping" }
+        ]
+      },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#b98c58",
+				"overlay_color": "#e2bf93"
+			}
+		}
+	}
+}

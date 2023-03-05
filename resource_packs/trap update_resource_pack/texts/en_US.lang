@@ -1,0 +1,12 @@
+tile.pa:trap_table.name=trap table
+tile.pa:trap_grass.name=trap grass
+tile.pa:trap_sand.name=trap sand
+tile.pa:trap_snow.name=trap snow
+tile.pa:trap_planks.name=trap planks
+tile.pa:trap_stone.name=trap stone
+tile.pa:trap.name=trap
+tile.pa:electric_trap.name=electric trap
+tile.pa:tnt_trap.name=tnt trap
+tile.pa:snow_trap.name=snow trap
+tile.pa:cold_trap.name=cold trap
+tile.pa:lava_trap.name=lava trap

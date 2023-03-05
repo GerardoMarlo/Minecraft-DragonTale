@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "m:cooked_ostrich_recipe"
+    },
+
+
+    "tags": ["furnace", "smoker", "campfire", "soul_campfire"],
+    "input": "m:raw_ostrich",
+    "output": "m:cooked_ostrich"
+  }
+  
+}

@@ -1,0 +1,74 @@
+{
+  "format_version": "1.8.0",
+	"animations": {
+  		"animation.castor.base": {
+			"bones": {
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.castor.sit": {
+			"loop": true,
+			"bones": {
+				"leg2": {
+					"rotation": [-50, 0, 0],
+					"position": [0, -3, -2]
+				},
+				"leg3": {
+					"rotation": [-50, 0, 0],
+					"position": [0, -3, -2]
+				},
+				"leg0": {
+					"rotation": [-55, 20, 0],
+					"position": [0, 5, 4]
+				},
+				"leg1": {
+					"rotation": [-45, -15, 0],
+					"position": [0, 5, 5]
+				},
+				"body": {
+					"rotation": [-90, 0, 0],
+					"position": [0, -8, 7]
+				},
+				"head": {
+					"position": [0, 6, 7]
+				},
+				"tail": {
+					"rotation": [200, 0, 0],
+					"position": [0, 7, 9]
+				}
+			}
+		},
+    "animation.castor.move": {
+        "loop": true,
+         "bones": {
+           "leg0": { "rotation": [ "Math.cos(query.modified_distance_moved * 38.17) * 58.1 * query.modified_move_speed", 0.0, 0.0 ] },
+           "leg3": { "rotation": [ "Math.cos(query.modified_distance_moved * 38.17 + 180.0) * 58.1 * query.modified_move_speed", 0.0, 0.0 ] },
+           "leg1": { "rotation": [ "Math.cos(query.modified_distance_moved * 38.17 + 180.0) * 58.1 * query.modified_move_speed", 0.0, 0.0 ] },
+           "leg2": { "rotation": [ "Math.cos(query.modified_distance_moved * 38.17) * 58.1 * query.modified_move_speed", 0.0, 0.0 ] }
+            }
+        }
+    }
+}

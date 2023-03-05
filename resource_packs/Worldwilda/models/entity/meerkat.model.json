@@ -1,0 +1,79 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.meerkat",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 9, -3],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3, 6, -10], "size": [7, 6, 17], "uv": [0, 0], "mirror": false}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [0, 11, 6],
+					"cubes": [
+						{"origin": [-1, 9.9282, 6.5359], "size": [3, 2, 12], "pivot": [0, 11, 6], "rotation": [-30, 0, 0], "uv": [0, 23]}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [0, 10, -12],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3, 7, -15], "size": [7, 6, 5], "uv": [18, 23], "mirror": false},
+						{"origin": [-1, 7, -18], "size": [3, 3, 3], "uv": [0, 0], "mirror": false},
+						{"origin": [-5, 9, -11], "size": [2, 3, 0], "uv": [12, 3], "mirror": false},
+						{"origin": [4, 9, -11], "size": [2, 3, 0], "uv": [9, 0], "mirror": false}
+					],
+					"locators": {
+						"held_item": [0, 8, -17]
+					}
+				},
+				{
+					"name": "leg0",
+					"pivot": [4, 6, 6],
+					"mirror": true,
+					"cubes": [
+						{"origin": [2, 0, 5], "size": [2, 6, 2], "uv": [31, 0], "mirror": false}
+					]
+				},
+				{
+					"name": "leg1",
+					"pivot": [-2, 7, 6],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3, 0, 5], "size": [2, 6, 2], "uv": [0, 23], "mirror": false}
+					]
+				},
+				{
+					"name": "leg2",
+					"pivot": [4, 7, -9],
+					"mirror": true,
+					"cubes": [
+						{"origin": [2, 0, -10], "size": [2, 6, 2], "uv": [8, 6], "mirror": false}
+					]
+				},
+				{
+					"name": "leg3",
+					"pivot": [-2, 6, -9],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3, 0, -10], "size": [2, 6, 2], "uv": [0, 6], "mirror": false}
+					]
+				}
+			]
+		}
+	]
+}

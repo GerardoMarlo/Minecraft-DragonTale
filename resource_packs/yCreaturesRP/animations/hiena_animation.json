@@ -1,0 +1,111 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hiena.base": {
+			"loop": true,
+			"bones": {
+				"head0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"body0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.hiena.walk": {
+			"loop": true,
+			"animation_length": 0.9667,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [40, 0, 0],
+						"0.4833": [0, 0, 0],
+						"0.7167": [-40, 0, 0],
+						"0.9667": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [-40, 0, 0],
+						"0.4833": [0, 0, 0],
+						"0.7167": [40, 0, 0],
+						"0.9667": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [-40, 0, 0],
+						"0.4833": [0, 0, 0],
+						"0.7167": [40, 0, 0],
+						"0.9667": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [40, 0, 0],
+						"0.4833": [0, 0, 0],
+						"0.7167": [-40, 0, 0],
+						"0.9667": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.hiena.baby_transform": {
+			"loop": true,
+			"bones": {
+				"head0": {
+					"position": [-2.5, 0, 4],
+					"scale": [1.8, 1.8, 1.5]
+				},
+				"leg0": {
+					"position": [0, 0, 1],
+					"scale": [1.2, 1, 1.4]
+				},
+				"leg1": {
+					"position": [0, 0, 1],
+					"scale": [1.2, 1, 1.4]
+				},
+				"leg3": {
+					"scale": [1.2, 1, 1.5]
+				},
+				"leg2": {
+					"scale": [1.2, 1, 1.5]
+				},
+				"tail": {
+					"position": [-2, 0, 0],
+					"scale": [1.6, 1.2, 1.2]
+				}
+			}
+		}
+	}
+}

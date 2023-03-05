@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.viajante.walk": {
+			"loop": true,
+			"animation_length": 0.96,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [65, 0, 0],
+						"0.4833": [0, 0, 0],
+						"0.7167": [-65, 0, 0],
+						"0.9667": [0, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [-65, 0, 0],
+						"0.4833": [0, 0, 0],
+						"0.7167": [65, 0, 0],
+						"0.9667": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.viajante.riding": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [0, -10, 2]
+				},
+				"leg0": {
+					"rotation": [-90, 15, 0]
+				},
+				"leg1": {
+					"rotation": [-90, -15, 0]
+				}
+			}
+		}
+	}
+}

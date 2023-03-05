@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_e0e6c6a2"
+    },
+    "tags": [
+      "traptable"
+    ],
+    "pattern": [
+      "AAA",
+      "BBB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:tallgrass",
+        "data": 1
+      },
+      "B": {
+        "item": "minecraft:ice",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "pa:cold_trap",
+      "count": 1
+    }
+  }
+}

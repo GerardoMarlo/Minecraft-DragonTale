@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "m:gazelle",
+      "min_engine_version": "1.8.0",
+      "materials": { "default": "cow" },
+      "textures": {
+        "default": "textures/entity/gazelle"
+      },
+      "geometry": {
+        "default": "geometry.gazelle"
+      },
+      "animations": {
+         "sitt": "controller.animation.sit" ,
+         "setup": "animation.cow.setup",
+         "sit": "animation.gazelle.sit",
+         "baby_transform": "animation.gazelle.baby_transform",
+        "walk": "animation.gazelle.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+           "sitt",
+          "setup",
+          { "walk": "query.modified_move_speed" },
+          "look_at_target",
+          { "baby_transform": "query.is_baby" }
+        ]
+      },
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+          "base_color": "#8E5933",
+          "overlay_color": "#6C6C6C"
+      }
+    }
+  }
+}

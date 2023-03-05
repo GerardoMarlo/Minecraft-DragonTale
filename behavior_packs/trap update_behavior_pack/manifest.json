@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "troll all your Friends with funny traps by salim surmay",
+    "name": "trap update",
+    "uuid": "ab5655e0-142b-424a-aef1-e1683bd434da",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "troll all your Friends with funny traps by salim surmay",
+      "type": "data",
+      "uuid": "44876cb9-e8b4-45ee-8522-40ac55051939",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "287b535f-c979-48ee-9947-f0f70d03022d",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

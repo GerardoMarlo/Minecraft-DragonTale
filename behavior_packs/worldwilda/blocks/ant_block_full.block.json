@@ -1,0 +1,60 @@
+{
+	"format_version": "1.19.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "m:ant_block_full",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"events": {
+		"drop_item": {
+		"spawn_loot": {
+		"table": "loot_tables/entities/larvae.json"
+		},
+		"run_command": {
+					"command": [
+						"setblock ~ ~ ~ m:ant_block_colonie",
+						"playsound block.beehive.shear @a [r=16]"
+					]
+				}
+		    },
+		"spawn_queen": {
+		"run_command": {
+					"command": [
+						"summon m:fire_ant ~ ~ ~ queen",
+						"playsound block.beehive.exit @a [r=16]"
+					]
+				}
+		    }
+		},
+		"components": {
+		  "minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:collision_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.6
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "spawn_queen",
+				"target": "self"
+			},
+			
+			"minecraft:on_interact": {
+				"condition": "q.is_item_name_any('slot.weapon.mainhand',0, 'minecraft:shears')",
+				"event": "drop_item",
+				"target": "self"
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"minecraft:geometry": "geometry.ant_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ant_block_full",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#82490f"
+		}
+	}
+}

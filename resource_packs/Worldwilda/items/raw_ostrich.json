@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:raw_ostrich",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "m:raw_ostrich",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

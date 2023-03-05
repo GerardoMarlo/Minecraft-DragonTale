@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:white_lion",
+      "materials": { "default": "slime" },
+      "textures": {
+        "blue": "textures/entity/big_cats/white_lion_chest",
+        "green": "textures/entity/big_cats/white_lion_chest",
+        "red_blue": "textures/entity/big_cats/white_lion",
+        "yellow_blue": "textures/entity/big_cats/white_lion_chest",
+        "grey": "textures/entity/big_cats/white_lion_chest"
+      },
+      "geometry": { "default": "geometry.lion" },
+      "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.lion.sit",
+        "baby_transform": "animation.llama.baby_transform"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.parrot" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_lion",
+        "texture_index": 0
+      }
+    }
+  }
+}

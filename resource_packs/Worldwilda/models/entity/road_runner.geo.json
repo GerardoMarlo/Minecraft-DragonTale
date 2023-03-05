@@ -1,0 +1,130 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.road_runner",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "Roadrunner",
+					"pivot": [0, 9, 0]
+				},
+				{
+					"name": "Body",
+					"parent": "Roadrunner",
+					"pivot": [0, 13, 0],
+					"cubes": [
+						{
+							"origin": [-4, 9, -7],
+							"size": [8, 8, 14],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "Tail",
+					"parent": "Body",
+					"pivot": [0, 17, 7],
+					"rotation": [35, 0, 0],
+					"cubes": [
+						{
+							"origin": [-4, 17, 7],
+							"size": [8, 0, 16],
+							"uv": [28, 15]
+						}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "Roadrunner",
+					"pivot": [0, 16.14715, -6.3617],
+					"cubes": [
+						{
+							"origin": [-2.5, 12.14715, -9.3617],
+							"size": [5, 12, 5],
+							"pivot": [0, 16.14715, -6.3617],
+							"rotation": [35, 0, 0],
+							"uv": [27, 28]
+						},
+						{
+							"origin": [-0.5, 20.14715, -9.3617],
+							"size": [0, 7, 8],
+							"pivot": [0, 16.14715, -6.3617],
+							"rotation": [35, 0, 0],
+							"uv": [11, 35]
+						},
+						{
+							"origin": [-1, 20.14715, -14.3617],
+							"size": [2, 2, 7],
+							"pivot": [0, 16.14715, -6.3617],
+							"rotation": [25, 0, 0],
+							"uv": [35, 3]
+						}
+					]
+				},
+				{
+					"name": "Leg1",
+					"parent": "Roadrunner",
+					"pivot": [-1.5, 9, -0.5],
+					"cubes": [
+						{
+							"origin": [-3, 0, -1],
+							"size": [3, 9, 3],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "Leg2",
+					"parent": "Roadrunner",
+					"pivot": [1.5, 9, -0.5],
+					"cubes": [
+						{
+							"origin": [0, 0, -1],
+							"size": [3, 9, 3],
+							"uv": [0, 0],
+							"mirror": true
+						}
+					]
+				},
+				{
+					"name": "Wing1",
+					"parent": "Roadrunner",
+					"pivot": [-5.1, 15, -5],
+					"rotation": [0, -45, 0],
+					"cubes": [
+						{
+							"origin": [-4, 10, -6],
+							"size": [0, 7, 12],
+							"pivot": [-5, 15, -5],
+							"rotation": [0, 40, 0],
+							"uv": [0, 22]
+						}
+					]
+				},
+				{
+					"name": "Wing2",
+					"parent": "Roadrunner",
+					"pivot": [5.1, 15, -5],
+					"rotation": [0, 45, 0],
+					"cubes": [
+						{
+							"origin": [4, 10, -6],
+							"size": [0, 7, 12],
+							"pivot": [5, 15, -5],
+							"rotation": [0, -42.5, 0],
+							"uv": [0, 22],
+							"mirror": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

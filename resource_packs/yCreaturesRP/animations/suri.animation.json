@@ -1,0 +1,207 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.suri.walk": {
+			"loop": true,
+			"animation_length": 1.15,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2667": [40, 0, 0],
+						"0.5333": [0, 0, 0],
+						"0.8333": [-40, 0, 0],
+						"1.15": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2667": [0, 5.5, 1.8],
+						"0.5333": [0, 0, 0],
+						"0.8333": [0, -4, -5],
+						"1.15": [0, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2667": [-40, 0, 0],
+						"0.5333": [0, 0, 0],
+						"0.8333": [40, 0, 0],
+						"1.15": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2667": [0, -4, -5],
+						"0.5333": [0, 0, 0],
+						"0.8333": [0, 5.5, 1.8],
+						"1.15": [0, 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2667": [40, 0, 0],
+						"0.5333": [0, 0, 0],
+						"0.8333": [-40, 0, 0],
+						"1.15": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2667": [0, 0, 4],
+						"0.5333": [0, 0, 0],
+						"0.8333": [0, 2, -4],
+						"1.15": [0, 0, 0]
+					}
+				},
+				"leg3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2667": [-40, 0, 0],
+						"0.5333": [0, 0, 0],
+						"0.8333": [40, 0, 0],
+						"1.15": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2667": [0, 2, -4],
+						"0.5333": [0, 0, 0],
+						"0.8333": [0, 0, 4],
+						"1.15": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.suri.base": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.suri.sit": {
+			"loop": true,
+			"animation_length": 1.38667,
+			"bones": {
+				"body": {
+					"rotation": [-75, 0, 0],
+					"position": [0, 6, -5]
+				},
+				"body2": {
+					"rotation": [50, 0, 0],
+					"position": [0, 8, 3.5]
+				},
+				"tail": {
+					"rotation": [-115, 0, 0],
+					"position": [0, 13, -3]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 8, 9]
+				},
+				"leg0": {
+					"rotation": [-10, 0, 0],
+					"position": [0, 5.8, 5]
+				},
+				"leg1": {
+					"rotation": [5, 0, 0],
+					"position": [0, 7.9, 6.6]
+				},
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"bodyb": {
+					"position": [0, 0, -5]
+				}
+			}
+		},
+		"animation.suri.riding": {
+			"loop": true,
+			"bones": {
+				"bodyb": {
+					"rotation": [-90, 0, 0],
+					"position": [1, 3, -8]
+				},
+				"leg3": {
+					"rotation": [0, 0, -20],
+					"position": [2, 0, 0]
+				},
+				"leg2": {
+					"rotation": [0, 0, 20],
+					"position": [-2, 0, 0]
+				},
+				"leg1": {
+					"rotation": [70, 0, 0],
+					"position": [0, 7.5, 3.5]
+				},
+				"leg0": {
+					"rotation": [65, 0, 0],
+					"position": [0, 7, 4]
+				},
+				"head": {
+					"rotation": [90, 0, 0],
+					"position": [0, 12, -2]
+				},
+				"tail": {
+					"rotation": [60, 0, 0],
+					"position": [0, 3, 8]
+				},
+				"body": {
+					"rotation": [30, 0, 0],
+					"position": [0, 1, 3]
+				}
+			}
+		},
+		"animation.suri.baby": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -6, 4],
+					"scale": [1.6, 1.6, 1.6]
+				}
+			}
+		}
+	}
+}

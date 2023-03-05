@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:fire_ant_item",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "m:fire_ant_item",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

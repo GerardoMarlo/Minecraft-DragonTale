@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:ostrich_saddle"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "E C",
+      "AAA",
+	  "DBD"
+    ],
+    "key": {
+	    "A": {
+        "item": "minecraft:leather"
+      },
+      "B": {
+        "item": "minecraft:iron_ingot"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "D": {
+        "item": "minecraft:feather"
+      },
+      "E": {
+        "item": "minecraft:lead"
+      }
+    },
+    "result": {
+      "item": "worldanimals:ostrich_saddle",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "trap_table_b6058ba7"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC",
+      "DED",
+      "D D"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:cobblestone",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:wooden_slab",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:fence",
+        "data": 0
+      },
+      "E": {
+        "item": "minecraft:crafting_table",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "pa:trap_table",
+      "count": 1
+    }
+  }
+}

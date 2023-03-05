@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "m:acacia_leaf_recipe"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:leaves2"
+      }
+    },
+    "result": {
+      "item": "m:acacia_leaf",
+            "count": 9
+    }
+  }
+}

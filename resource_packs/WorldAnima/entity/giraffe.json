@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:giraffe",
+      "materials": { "default": "slime" },
+      "textures": {
+        "blue": "textures/entity/giraffe/giraffe_chest",
+        "green": "textures/entity/giraffe/giraffe_chest",
+        "red_blue": "textures/entity/giraffe/giraffe",
+        "yellow_blue": "textures/entity/giraffe/giraffe_chest",
+        "grey": "textures/entity/giraffe/giraffe_chest"
+      },
+      "geometry": { "default": "geometry.giraffe" },
+      "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.parrot" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_giraffe",
+        "texture_index": 0
+      }
+    }
+  }
+}

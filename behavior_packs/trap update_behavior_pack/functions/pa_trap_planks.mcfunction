@@ -1,0 +1,1 @@
+give @p pa:trap_planks

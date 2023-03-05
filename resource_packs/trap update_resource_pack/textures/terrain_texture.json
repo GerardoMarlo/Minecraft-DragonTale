@@ -1,0 +1,68 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "pa_trap_sand": {
+      "textures": [
+        "textures/blocks/pa_trap_sand"
+      ]
+    },
+    "pa_trap_snow": {
+      "textures": [
+        "textures/blocks/pa_trap_snow"
+      ]
+    },
+    "pa_electric_trap": {
+      "textures": [
+        "textures/blocks/electric_trap"
+      ]
+    },
+    "pa_lava_trap": {
+      "textures": [
+        "textures/blocks/lava_trap"
+      ]
+    },
+    "pa_tnt_trap": {
+      "textures": [
+        "textures/blocks/tnt_trap"
+      ]
+    },
+    "pa_cold_trap": {
+      "textures": [
+        "textures/blocks/cold_trap"
+      ]
+    },
+    "pa_snow_trap": {
+      "textures": [
+        "textures/blocks/snow_trap"
+      ]
+    },
+    "pa_trap_table": {
+      "textures": [
+        "textures/blocks/pa_trap_table"
+      ]
+    },
+    "pa_trap_grass": {
+      "textures": [
+        "textures/blocks/pa_trap_grass"
+      ]
+    },
+    "pa_trap_planks": {
+      "textures": [
+        "textures/blocks/pa_trap_planks"
+      ]
+    },
+    "pa_trap_stone": {
+      "textures": [
+        "textures/blocks/pa_trap_stone"
+      ]
+    },
+    "pa_trap": {
+      "textures": [
+        "textures/blocks/pa_trap"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.orn.look_at_target": {
+      "states": {
+        "default": {
+          "animations": [
+            { "look_at_target": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.orn.sitting": {
+      "states": {
+        "default": {
+          "animations": [
+            { "orn_sitting": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.orn.base": {
+      "states": {
+        "default": {
+          "animations": [
+            { "orn_move": [] },
+            { "orn_base": [] }
+          ]
+        }
+      }
+    }
+  }
+}

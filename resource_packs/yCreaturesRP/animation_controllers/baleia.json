@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.baleia.general": {
+      "states": {
+        "swimming": {
+          "animations": [ { "move": [] } ],
+          "transitions": [
+            { "flopping": "!query.is_in_water" }
+          ]
+        },
+        "flopping": {
+          "animations": [ { "move": [] } ],
+          "transitions": [
+            { "swimming": "query.is_in_water" }
+          ]
+        }
+      }
+    },
+    "controller.animation.baleia.attacking": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "attacking": "variable.attack_time >= 0.0" }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            { "baleia_attacking": [] }
+          ],
+          "transitions": [
+            { "default": "variable.attack_time < 0.0" }
+          ]
+        }
+      }
+    }
+  }
+}

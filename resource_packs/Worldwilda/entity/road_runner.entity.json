@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:road_runner",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/road_runner"
+			},
+			"geometry": {
+				"default": "geometry.road_runner"
+			},
+			"animations": {
+			"walk": "animation.Roadrunner.walk",
+			"idle": "animation.Roadrunner.idle",
+			"attack": "animation.Roadrunner.attack",
+			"fly": "animation.Roadrunner.fly",
+			  "look_at_target": "animation.common.look_at_target"
+			},
+			   "scripts": {
+        "animate": [
+          "look_at_target",
+             { "walk": "query.modified_move_speed*2" },
+             "idle",
+             { "fly" : "!query.is_on_ground&&query.modified_move_speed*3" },
+             { "attack": "v.attack_time > 0" }
+          ]
+        },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#008473",
+				"overlay_color": "#804000"
+			}
+		}
+	}
+}

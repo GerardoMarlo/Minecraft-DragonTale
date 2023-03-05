@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_e0e5c5a2"
+    },
+    "tags": [
+      "traptable"
+    ],
+    "pattern": [
+      "AAA",
+      "BBB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:tallgrass",
+        "data": 1
+      },
+      "B": {
+        "item": "minecraft:tnt",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "pa:tnt_trap",
+      "count": 1
+    }
+  }
+}

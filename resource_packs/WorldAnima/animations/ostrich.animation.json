@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ostrich.sit": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"leg0": {
+					"rotation": [-52.5, 0, 0],
+					"position": [0.4, 4, 0]
+				},
+				"leg2": {
+					"rotation": [-52.5, 0, 0],
+					"position": [-0.3, 4, 0]
+				},
+				"rodilla2": {
+					"rotation": [130, 0, 0]
+				},
+				"rodilla0": {
+					"rotation": [130, 0, 0]
+				},
+				"ostrich": {
+					"position": [0, -13, 0]
+				}
+			}
+		}
+	}
+}

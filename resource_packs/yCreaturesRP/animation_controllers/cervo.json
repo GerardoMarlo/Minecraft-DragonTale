@@ -1,0 +1,32 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.cervo.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"walk" : "query.modified_move_speed"
+						}
+					],
+					"transitions" : [
+						{
+							"panic" : "query.has_panic"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"panic" : {
+					"animations" : [ "panic" ],
+					"transitions" : [
+						{
+							"default" : "!query.has_panic"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

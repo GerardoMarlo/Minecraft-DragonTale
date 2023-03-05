@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:yak",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/yak"
+			},
+			"geometry": {
+				"default": "geometry.yak"
+			},
+			      "animations": {
+			"walk": "animation.yak.walk",
+           "idle": "animation.yak.idle",
+            "baby": "animation.yak.baby",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+         { "baby": "query.is_baby" },
+         "idle",
+          { "walk": "query.modified_move_speed*4" },
+         "look_at_target"
+                ]
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#814140",
+				"overlay_color": "#fffdee"
+			}
+		}
+	}
+}

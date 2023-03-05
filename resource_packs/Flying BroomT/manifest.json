@@ -1,0 +1,17 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "§5§l§oBy MauBasSick §1TW--> §4@_MauBasSick_",
+        "name": "§lFlying Broom RP",
+        "uuid": "0732aacc-e415-11ea-87d0-0242ac130003",
+        "version": [0, 0, 1]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "resources",
+            "uuid": "0da244b2-e415-11ea-87d0-0242ac130003",
+            "version": [0, 0, 1]
+        }
+    ]
+}

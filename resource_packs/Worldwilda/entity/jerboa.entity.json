@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:jerboa",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/jerboa"
+			},
+			"geometry": {
+				"default": "geometry.jerboa"
+			},
+			"animations": {
+			"walk": "animation.jerboa.walk",
+			"idle": "animation.jerboa.idle",
+			"buddle": "animation.jerboa.admire",
+			  "look_at_target": "animation.common.look_at_target"
+			},
+			   "scripts": {
+        "animate": [
+          "look_at_target",
+             { "walk": "query.modified_move_speed*2" },
+             {"buddle" : "query.is_admiring" },
+             {"idle" : "!query.is_admiring" }
+          ]
+        },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#55462f",
+				"overlay_color": "#de702e"
+			}
+		}
+	}
+}

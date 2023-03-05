@@ -1,0 +1,45 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.lince.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+         				"look_at_target",
+						{
+							"walk" : "query.modified_move_speed"
+						}
+					],
+					"transitions" : [
+						{
+							"sit" : "query.is_sitting"
+						},
+						{
+							"sneak" : "query.is_sneaking"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"sit" : {
+					"animations" : [ "sit" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sitting"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"sneak" : {
+					"animations" : [ "sneak" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sneaking"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.suri.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+         				"look_at_target",
+						{
+							"walk" : "query.modified_move_speed"
+						}
+					],
+					"transitions" : [
+						{
+							"sit" : "query.is_sitting"
+						},
+						{
+							"riding" : "query.is_riding"
+						},
+						{
+							"rolling" : "query.is_rolling"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sit" : {
+					"animations" : [ "sit" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sitting"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"riding" : {
+					"animations" : [ "riding" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_riding"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"rolling" : {
+					"animations" : [ "rolling" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_rolling"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

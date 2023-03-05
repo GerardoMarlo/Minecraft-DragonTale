@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:komodo_dragon",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/reptils/komodo_dragon"
+      },
+      "geometry": { "default": "geometry.komodo_dragon" },
+      "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.komodo_dragon.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.llama.baby_transform"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_komodo_dragon",
+        "texture_index": 0
+      }
+    }
+  }
+}

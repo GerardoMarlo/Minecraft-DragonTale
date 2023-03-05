@@ -1,0 +1,20 @@
+{
+   "errors" : null,
+   "location" : {
+      "fs" : 2,
+      "path" : "C:/Users/Usuario/AppData/Local/Packages/Microsoft.MinecraftUWP_8wekyb3d8bbwe/LocalState/games/com.mojang/resource_packs/Slendytubbies TexturePack"
+   },
+   "upgraded" : true,
+   "warnings" : [
+      {
+         "key" : 13,
+         "parameters" : [ "/header/pack_id", "46141356-1eb1-30b1-b727-eb6a4c12d0fa" ],
+         "type" : 2
+      },
+      {
+         "key" : 13,
+         "parameters" : [ "/modules/0/uuid", "1b8e5bb8-5c3f-3f29-a91d-dbab0222d241" ],
+         "type" : 2
+      }
+   ]
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.seal": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.ver1",
+            "Texture.ver2",
+            "Texture.ver3",
+            "Texture.ver4",
+            "Texture.ver5"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

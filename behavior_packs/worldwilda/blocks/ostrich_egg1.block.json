@@ -1,0 +1,53 @@
+{
+	"format_version": "1.19.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "m:ostrich_egg1"
+		},
+		"events": {
+		"m:hatch2": {
+		"run_command": {
+					"command": [
+						"setblock ~ ~ ~ m:ostrich_egg2",
+						"playsound block.turtle_egg.crack @a [r=16]"
+					]
+				}
+		    }
+		},
+		"components": {
+		"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "m:hatch2",
+					"target": "self"
+				}
+			},
+			        "minecraft:loot": "loot_tables/blocks/ostrich_egg_block.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3.7
+			},
+			"minecraft:selection_box": {
+				"origin": [ -5, 0, -5 ],
+				"size": [ 10, 13, 10 ]
+			},
+			"minecraft:collision_box": {
+				"origin": [ -5, 0, -5 ],
+				"size": [ 10, 13, 10 ]
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 20,
+				"catch_chance_modifier": 5
+			},
+			"minecraft:geometry": "geometry.ostrich_egg",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ostrich_egg1",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#ffffff"
+		}
+	}
+}

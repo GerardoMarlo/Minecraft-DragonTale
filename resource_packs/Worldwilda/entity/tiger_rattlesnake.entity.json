@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:tiger_rattlesnake",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/tiger_rattlesnake"
+			},
+			"geometry": {
+				"default": "geometry.tiger_rattlesnake"
+			},
+			"animations": {
+			"climb": "animation.tiger_rattlesnake.climb",
+			"walk": "animation.tiger_rattlesnake.walk",
+			"rattle": "animation.tiger_rattlesnake.rattle",
+			"idle": "animation.tiger_rattlesnake.idle",
+	       "attack": "animation.tiger_rattlesnake.attack",
+	        "look_at_target": "animation.common.look_at_target"
+			},
+			   "scripts": {
+        "animate": [
+              {"climb": "query.is_wall_climbing"},
+            { "attack": "v.attack_time > 0" },
+         "idle",
+         {"rattle": "query.is_illager_captain" },
+        { "walk": "query.modified_move_speed*4" },
+        "look_at_target"
+        ]
+      },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#654139",
+				"overlay_color": "#69241c"
+			}
+		}
+	}
+}

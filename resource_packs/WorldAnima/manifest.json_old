@@ -1,0 +1,16 @@
+{
+  "header": {
+    "pack_id": "3n1df983fdn91d391n3ccm1c1",
+    "name": "Slendytubbies BehaviorPack v5.4",
+    "packs_version": "0.0.1",
+    "description": "Creador: ArathNidoGamer",
+    "modules": [
+      {
+        "description": "Creador: ArathNidoGamer",
+        "version": "0.0.1",
+        "uuid": "3n1df983fdn91d391n3ccm1c1",
+        "type": "resources"
+      }
+    ]
+  }
+}

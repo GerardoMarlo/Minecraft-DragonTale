@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "world wild animals addon made by enduringcell642",
+        "name": "World wild animals Resource Pack",
+        "uuid": "ddc7e914-997b-4479-ad6d-a3692c80f4d2",
+        "version": [0, 0, 1],
+        "min_engine_version": [ 1, 19, 20 ]
+    },
+    "modules": [
+        {
+            "description": "made by enduringcell642",
+            "type": "resources",
+            "uuid": "739ac1c1-935a-438f-96ea-f46c412d9578",
+            "version": [0, 0, 1]
+        }
+    ]
+}

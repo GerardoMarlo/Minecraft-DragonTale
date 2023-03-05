@@ -1,0 +1,94 @@
+{
+	"format_version": "1.10.0",
+	"geometry.trial_coala": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0.5, 0],
+		"bones": [
+			{
+				"name": "bodyb",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "body",
+				"parent": "bodyb",
+				"pivot": [0, 0, 0],
+				"rotation": [-5, 0, 0],
+				"cubes": [
+					{"origin": [-4, 4, -4], "size": [8, 6, 11], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "leg0",
+				"parent": "bodyb",
+				"pivot": [3, 5, -1.5],
+				"rotation": [0, 0, 5],
+				"cubes": [
+					{"origin": [1.44719, -0.24244, -3], "size": [3, 6, 3], "uv": [26, 28]}
+				]
+			},
+			{
+				"name": "leg1",
+				"parent": "bodyb",
+				"pivot": [-3, 5, -1.5],
+				"rotation": [0, 0, -5],
+				"cubes": [
+					{"origin": [-4.44719, -0.24244, -3], "size": [3, 6, 3], "uv": [14, 28]}
+				]
+			},
+			{
+				"name": "leg3",
+				"parent": "bodyb",
+				"pivot": [3, 5, 5],
+				"cubes": [
+					{"origin": [2, 0, 3], "size": [3, 6, 4], "uv": [0, 28]}
+				]
+			},
+			{
+				"name": "leg2",
+				"parent": "bodyb",
+				"pivot": [-3, 5, 5],
+				"cubes": [
+					{"origin": [-5, 0, 3], "size": [3, 6, 4], "uv": [22, 17]}
+				]
+			},
+			{
+				"name": "tail",
+				"parent": "bodyb",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-2, 7, 6], "size": [4, 3, 3], "uv": [0, 38]}
+				]
+			},
+			{
+				"name": "head",
+				"parent": "bodyb",
+				"pivot": [0, 8, -3],
+				"cubes": [
+					{"origin": [-3, 6, -7], "size": [6, 6, 5], "uv": [0, 17]},
+					{"origin": [-1, 6.5, -8], "size": [2, 3, 1], "uv": [34, 38]}
+				]
+			},
+			{
+				"name": "head1",
+				"parent": "head",
+				"pivot": [0, 0, 0],
+				"rotation": [0, 0, 15],
+				"cubes": [
+					{"origin": [-2, 9.5, -5], "size": [4, 4, 1], "uv": [24, 38]}
+				]
+			},
+			{
+				"name": "head2",
+				"parent": "head",
+				"pivot": [0, 0, 0],
+				"rotation": [0, 0, -15],
+				"cubes": [
+					{"origin": [-2, 9.5, -5], "size": [4, 4, 1], "uv": [14, 38]}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:white_shark",
+      "materials": { "default": "dolphin" },
+      "textures": {
+        "default": "textures/entity/shark/white_shark"
+      },
+      "geometry": {
+        "default": "geometry.shark"
+      },
+      "animations": {
+        "move": "animation.shark.walk"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.dolphin.general" }
+      ],
+      "render_controllers": [ "controller.render.dolphin" ],
+      "spawn_egg": {
+        "texture": "egg_white_shark",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:crab",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/crab/crab_v2",
+		"blue": "textures/entity/crab/blue_crab_v2"
+      },
+      "geometry": { "default": "geometry.crab_v2" },
+      "animations": {
+        "setup": "animation.crab_v2.idle",
+        "walk": "animation.crab_v2.walk",
+		"attack": "animation.crab.attack",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.llama.baby_transform"
+      },
+      "animation_controllers": [
+		{
+			"attack": "controller.animation.animals.attack"
+		},
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.iguana" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_crab",
+        "texture_index": 0
+      }
+    }
+  }
+}

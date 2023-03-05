@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:camel_saddle"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "BB ",
+      "AAA",
+	  " C"
+    ],
+    "key": {
+	    "A": {
+        "item": "minecraft:leather"
+      },
+      "B": {
+        "item": "minecraft:lead"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      }
+    },
+    "result": {
+      "item": "worldanimals:camel_saddle",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

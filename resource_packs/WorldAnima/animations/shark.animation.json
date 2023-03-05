@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.shark.walk": {
+			"loop": true,
+			"animation_length": 0.96,
+			"bones": {
+				"tail": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [0, -15, 0],
+						"0.4833": [0, 0, 0],
+						"0.7167": [0, 15, 0],
+						"0.9667": [0, 0, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				}
+			}
+		}
+	}
+}

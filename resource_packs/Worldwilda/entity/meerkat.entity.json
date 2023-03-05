@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "m:meerkat",
+      "materials": { "default": "fox" },
+      "textures": {
+        "default": "textures/entity/meerkat"
+      },
+      "geometry": {
+        "default": "geometry.meerkat"
+      },
+      "animations": {
+        "baby_transform": "animation.meerkat.baby_transform",
+        "walk": "animation.quadruped.walk",
+        "sleep": "animation.meerkat.sleeping",
+         "stuck": "animation.fox.stuck",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.meerkat.baby_transform",
+        "crouch": "animation.fox.crouch",
+        "sit": "animation.meerkat.sit",
+        "wiggle": "animation.fox.wiggle",
+        "sitt": "controller.animation.sit"
+      },
+      "scripts": {
+        "animate": [
+           { "sit": "query.is_eating" },
+          { "baby_transform": "query.is_baby" },
+          "sitt",
+          { "sleep": "query.is_sleeping" }
+        ]
+      },
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+          "base_color": "#FFB800",
+        "overlay_color": "#755200"
+      }
+    }
+  }
+}

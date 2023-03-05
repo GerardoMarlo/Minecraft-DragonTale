@@ -1,0 +1,54 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.flamingo.base": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.flamingo.sit": {
+			"loop": true,
+			"bones": {
+				"leg1a": {
+					"rotation": [-90, 0, 0],
+					"position": [0, -3, 3]
+				},
+				"leg1b": {
+					"rotation": [90, 0, 0],
+					"position": [0, 4, -5]
+				},
+				"head": {
+					"rotation": [-5, 0, 0]
+				}
+			}
+		},
+		"animation.flamingo.move" : {
+			"anim_time_update" : "query.modified_distance_moved",
+			"bones" : {
+				"leg0" : {
+					"rotation" : [ "math.cos(query.anim_time * 10.17) *  30.0", 0.0, 0.0 ]
+				},
+				"leg1" : {
+					"rotation" : [ "math.cos(query.anim_time * 10.17) * -30.0", 0.0, 0.0 ]
+				}
+			},
+			"loop" : true
+		}
+	}
+}

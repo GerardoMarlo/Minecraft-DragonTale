@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cervom.baby": {
+			"loop": true,
+			"bones": {
+				"tail3": {
+					"position": [-3.8, -33, -18],
+					"scale": [2.9, 2.6, 2.9]
+				},
+				"head": {
+					"position": [0, 1, 1],
+					"scale": [1.6, 1.6, 1.6]
+				},
+				"head11": {
+					"rotation": [45, 0, -30],
+					"position": [21, 0, 25],
+					"scale": [0, 0, 0]
+				},
+				"head19": {
+					"rotation": [45, 0, 30],
+					"position": [-21, 0, 24],
+					"scale": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

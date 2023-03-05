@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:pelican",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/pelican"
+      },
+      "geometry": { "default": "geometry.pelican" },
+      "animations": {
+        "setup": "animation.pelican.idle",
+        "walk": "animation.quadruped.walk"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_pelican",
+        "texture_index": 0
+      }
+    }
+  }
+}

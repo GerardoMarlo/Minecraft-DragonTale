@@ -1,0 +1,31 @@
+/// Copyright, all Rights Reserved///All files are protected by @ GabrielCas29007, Copying or modifying these files is subject to copyright charged to their owner///
+
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "ycreatures:trial_tubarao",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:density_limit": {
+          "surface":10
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+        "minecraft:weight": {
+          "default": 5
+        },
+        "minecraft:herd": {
+          "min_size":1,
+          "max_size":1
+        },
+
+        "minecraft:biome_filter": [
+          {"test": "has_biome_tag", "operator":"==", "value": "ocean"}
+        ]
+      }
+    ]
+  }
+}

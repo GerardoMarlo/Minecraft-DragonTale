@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tigre.sit": {
+			"loop": true,
+			"bones": {
+				"bodyb": {
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 40],
+					"position": [-2, -2, 0]
+				},
+				"bone2": {
+					"rotation": [0, 0, -95]
+				},
+				"head": {
+					"rotation": [0, 0, -35]
+				},
+				"leg_front_left": {
+					"position": [4, 0, 0]
+				},
+				"leg_front_right": {
+					"position": [4, 0, 0]
+				},
+				"leg_back_right": {
+					"rotation": [15, 0, 90],
+					"position": [2, -15, 0]
+				},
+				"leg_back_left": {
+					"rotation": [-15, 0, 90],
+					"position": [1, -15, 0]
+				}
+			}
+		}
+	}
+}

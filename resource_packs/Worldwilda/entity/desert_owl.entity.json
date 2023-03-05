@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:desert_owl",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/desert_owl"
+			},
+			"geometry": {
+				"default": "geometry.desert_owl"
+			},
+			"animations": {
+			"fly": "animation.desert_owl.fly",
+			"air": "animation.desert_owl.air",
+			"sleep": "animation.desert_owl.sleep",
+			"idle": "animation.desert_owl.idle",
+			"charge": "animation.desert_owl.charge",
+         "look_at_target": "animation.common.look_at_target"
+			},
+       "scripts": {
+        "animate": [
+        "air",
+        { "charge": "query.is_illager_captain" },
+        { "idle": "!query.is_sleeping" },
+        { "sleep": "query.is_sleeping" },
+          "look_at_target",
+          { "fly" : "!query.is_on_ground&&query.modified_move_speed*3" }
+        ]
+      },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#5f12c8",
+				"overlay_color": "#0cbc81"
+			}
+		}
+	}
+}

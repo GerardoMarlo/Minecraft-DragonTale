@@ -1,0 +1,37 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "m:ant_colonie_feature_rule",
+			"places_feature": "m:ant_colonie_feature"
+		},
+		"conditions": {
+			"placement_pass": "first_pass",
+			"minecraft:biome_filter": {
+				"test": "has_biome_tag",
+				"operator": "==",
+				"value": "desert"
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			  "scatter_chance": 0.01,
+			        "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+			"y": "query.heightmap(v.worldx, v.worldz)", //Generates the feature on the highest block on the column
+			"z": {
+				"extent": [0, 16],
+				"distribution": "uniform"
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 80
+			}
+		}
+	}
+}

@@ -1,0 +1,127 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.imperador.walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leg1": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2333": [0, 0, 3],
+						"0.4833": [0, 0, 0],
+						"0.7167": [0, 0, -3],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2333": [0, 0, -3],
+						"0.4833": [0, 0, 0],
+						"0.7167": [0, 0, 3],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"leg3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [0, 0, -25],
+						"0.4833": [0, 0, 0],
+						"0.7167": [0, 0, -25],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"leg4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [0, 0, 25],
+						"0.4833": [0, 0, 0],
+						"0.7167": [0, 0, 25],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [0, 0, -10],
+						"0.4833": [0, 0, 0],
+						"0.7167": [0, 0, 10],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.imperador.setup": {
+			"loop": true,
+			"bones": {
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg4": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"bodyb": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.imperador.derp": {
+			"loop": true,
+			"bones": {
+				"leg1": {
+					"rotation": [60, 0, 0],
+					"position": [0, 0, 2]
+				},
+				"leg2": {
+					"rotation": [60, 0, 0],
+					"position": [0, 0, 2]
+				},
+				"leg3": {
+					"rotation": [-90, -85, 20],
+					"position": [0, -5, 0]
+				},
+				"leg4": {
+					"rotation": [-90, 85, -20],
+					"position": [0, -5, 0]
+				},
+				"head": {
+					"rotation": [-90, 0, 0],
+					"position": [0, 6, -2]
+				},
+				"tail": {
+					"rotation": [-50, 0, 0],
+					"position": [0, 6, 0]
+				},
+				"bodyb": {
+					"rotation": [90, 0, 0],
+					"position": [0, 4, 23]
+				}
+			}
+		}
+	}
+}

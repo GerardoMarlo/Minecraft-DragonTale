@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.rhinoceros_armor": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.reptil",
+            "Texture.gold",
+            "Texture.iron",
+            "Texture.diamond",
+            "Texture.citrine",
+            "Texture.ruby",
+            "Texture.emerald",
+            "Texture.netherite"
+          ]
+        }
+      },
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.armor" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    }
+  }
+}

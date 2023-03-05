@@ -1,0 +1,32 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.canario.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"walk" : "query.modified_move_speed"
+						}
+					],
+					"transitions" : [
+						{
+							"fly" : "query.is_flying"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"fly" : {
+					"animations" : [ "fly" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_flying"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

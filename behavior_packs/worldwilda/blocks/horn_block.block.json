@@ -1,0 +1,28 @@
+{
+	"format_version": "1.19.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "m:horn_block",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.1
+			},
+          "minecraft:loot": "loot_tables/blocks/horn_block_drop.json",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"minecraft:geometry": "geometry.horn_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "horn_block",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:map_color": "#171515"
+		}
+	}
+}

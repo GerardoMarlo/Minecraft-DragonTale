@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "fb:fly_broom",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/fly/fly_broom_0"
+      },
+      "geometry": {
+        "default": "geometry.flyb"
+      },
+      "particle_effects": {
+        "fly": "minecraft:balloon_gas_particle"
+      },
+      "render_controllers": [ "controller.render.flyb" ],
+	  "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "enti4",
+        "texture_index": 0
+      }
+    }
+  }
+}

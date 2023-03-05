@@ -1,0 +1,205 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.gua.setup": {
+			"loop": true,
+			"bones": {
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.gua.sleep": {
+			"loop": true,
+			"bones": {
+				"leg2": {
+					"position": [0, -4, 0]
+				},
+				"leg2a": {
+					"position": [0, 0, 1]
+				},
+				"leg2b": {
+					"position": [1, 3, 3]
+				},
+				"leg1": {
+					"position": [0, -2, 0]
+				},
+				"leg1b": {
+					"position": [0, 2, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, -4, 0]
+				},
+				"leg3": {
+					"position": [0, -4, 0]
+				},
+				"leg3a": {
+					"position": [0, 0, 1]
+				},
+				"leg3b": {
+					"position": [-1, 3, 3]
+				},
+				"leg0": {
+					"position": [0, -2, 0]
+				},
+				"leg0b": {
+					"position": [0, 2, 0]
+				},
+				"tail": {
+					"rotation": [-20, 0, 0],
+					"position": [0, 0, -4]
+				},
+				"head": {
+					"rotation": [0, -50, 0],
+					"position": [-13, -5, -6]
+				}
+			}
+		},
+		"animation.gua.sit": {
+			"loop": true,
+			"bones": {
+				"leg2": {
+					"position": [0, -3, -5]
+				},
+				"leg2b": {
+					"position": [-1, 2, 2]
+				},
+				"leg1": {
+					"rotation": [-95, 0, 0],
+					"position": [2, 7, -15]
+				},
+				"leg1b": {
+					"rotation": [-170, 0, 0],
+					"position": [0, 4, -21]
+				},
+				"body": {
+					"rotation": [-85, 0, 0],
+					"position": [0, 11, -8]
+				},
+				"leg3": {
+					"position": [0, -3, -5]
+				},
+				"leg3b": {
+					"position": [1, 2, 2]
+				},
+				"leg0": {
+					"rotation": [-95, 0, 0],
+					"position": [-1, 7, -15]
+				},
+				"leg0b": {
+					"rotation": [155, 0, 0],
+					"position": [0, 10, -19]
+				},
+				"tail": {
+					"position": [0, -7, -5]
+				},
+				"head": {
+					"rotation": [5, 0, 0],
+					"position": [0, 17, 16]
+				}
+			}
+		},
+		"animation.gua.crouch": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0, 2]
+				},
+				"tail": {
+					"rotation": [80, 0, 0],
+					"position": [0, 4, 14]
+				},
+				"head": {
+					"rotation": [0, 0, 15],
+					"position": [-3, -4, 1]
+				},
+				"head1": {
+					"rotation": [-10, 0, 0],
+					"position": [0, -4, -1]
+				},
+				"head2": {
+					"rotation": [5, 0, 0],
+					"position": [0, 2, 2]
+				}
+			}
+		},
+		"animation.gua.wiggle": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0, 2]
+				},
+				"tail": {
+					"rotation": [80, 0, 0],
+					"position": [0, 4, 14]
+				},
+				"head": {
+					"rotation": [0, 0, 15],
+					"position": [-3, -4, 1]
+				},
+				"head1": {
+					"rotation": [-10, 0, 0],
+					"position": [0, -4, -1]
+				},
+				"head2": {
+					"rotation": [5, 0, 0],
+					"position": [0, 2, 2]
+				}
+			}
+		},
+		"animation.gua.stuck": {
+			"loop": true,
+			"bones": {
+				"leg2": {
+					"position": [0, -27, 0]
+				},
+				"leg1": {
+					"position": [0, -28, 0]
+				},
+				"body": {
+					"position": [0, -29, 0]
+				},
+				"leg3": {
+					"position": [0, -30, 0]
+				},
+				"leg0": {
+					"position": [0, -29, 0]
+				},
+				"tail": {
+					"position": [0, -29, 0]
+				},
+				"head": {
+					"position": [0, -31, 0]
+				}
+			}
+		}
+	}
+}

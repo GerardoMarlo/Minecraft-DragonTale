@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:tiger",
+      "materials": { "default": "slime" },
+      "textures": {
+        "creamy": "textures/entity/big_cats/tiger",
+        "blue": "textures/entity/big_cats/tiger_chest",
+        "green": "textures/entity/big_cats/tiger_chest",
+        "red_blue": "textures/entity/big_cats/tiger",
+        "yellow_blue": "textures/entity/big_cats/tiger_chest",
+        "grey": "textures/entity/big_cats/tiger_chest"
+      },
+      "geometry": { "default": "geometry.tiger" },
+      "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.tiger.sit",
+        "baby_transform": "animation.llama.baby_transform"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.parrot" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_tiger",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "m:bombardier_beetle",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		    "component_groups": {
+	    "minecraft:beetle_adult": {
+			"minecraft:scale": {
+					"value": 0.6
+				},
+				"minecraft:experience_reward": {
+					"on_bred": "Math.Random(1,7)",
+					"on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/bombardier_beetle_item.json"
+				},
+				"minecraft:behavior.breed": {
+					"priority": 3,
+					"speed_multiplier": 1
+				},
+				"minecraft:breedable": {
+					"require_tame": false,
+					"breed_items": "tallgrass",
+					"breeds_with": {
+						"mate_type": "m:bombardier_beetle",
+						"baby_type": "m:bombardier_beetle",
+						"breed_event": {
+							"event": "minecraft:entity_born",
+							"target": "baby"
+						}
+					}
+			     }
+				},
+		    "minecraft:beetle_baby": {
+				"minecraft:is_baby": {},
+				"minecraft:scale": {
+					"value": 0.4
+				},
+				"minecraft:ageable": {
+					"duration": 100,
+					"feed_items": "tallgrass",
+					"grow_up": {
+						"event": "minecraft:ageable_grow_up",
+						"target": "self"
+					}
+				},
+				"minecraft:behavior.follow_parent": {
+					"priority": 1,
+					"speed_multiplier": 1.3
+				}
+			}
+		},
+		         "components": {
+		            "minecraft:grows_crop": {
+                    "charges": 8,
+                    "chance": 1.0
+                },
+		      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          },
+          {
+            "filters": { "test": "in_water", "operator": "==", "value": true },
+            "cause": "drowning",
+            "damage_per_tick": 1
+          }
+        ]
+      },
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": true
+			},
+			"minecraft:movement": {
+				"value": 0.22
+			},
+	"minecraft:collision_box": {
+	"width": 1,
+	"height": 0.8
+       },
+      "minecraft:type_family": {
+        "family": [ "beetle", "mob" ]
+      },
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:navigation.walk": {
+				"avoid_water": true,
+	         "can_path_over_water": true
+			},
+			  "minecraft:health": {
+        "value": {
+          "range_min": 5,
+          "range_max": 5
+          }
+        },
+        "minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.panic": {
+				"priority": 1,
+				"speed_multiplier": 1.2
+			},
+			   "minecraft:behavior.avoid_mob_type": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                { "test" :  "is_family", "subject" : "other", "value" :  "meerkat"}
+              ]
+            },
+            "max_dist": 8,
+            "sprint_speed_multiplier": 1.1
+          }
+        ]
+      },
+                 "minecraft:behavior.breed": {
+				"priority": 3,
+				"speed_multiplier": 1.2
+			},
+			"minecraft:behavior.tempt": {
+				"priority": 4,
+				"speed_multiplier": 1.25,
+				"items": ["tallgrass"]
+			},
+			"minecraft:behavior.follow_parent": {
+				"priority": 5,
+				"speed_multiplier": 1.1
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 0.8
+				},
+				"minecraft:behavior.random_look_around": {
+        "priority": 7
+             }
+			},
+			"events": {
+			"minecraft:spawn_adult": {
+				"add": {
+					"component_groups": ["minecraft:beetle_adult"]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 95,
+						"trigger": "minecraft:spawn_adult"
+					},
+					{
+						"weight": 5,
+						"add": {
+							"component_groups": ["minecraft:beetle_baby"]
+						}
+					}
+				]
+			},
+			"minecraft:entity_born": {
+				"add": {
+					"component_groups": ["minecraft:beetle_baby"]
+				}
+			},
+			"minecraft:ageable_grow_up": {
+				"remove": {
+					"component_groups": ["minecraft:beetle_baby"]
+				},
+				"add": {
+					"component_groups": ["minecraft:beetle_adult"]
+				}
+			}
+		}
+		}
+	}
+}

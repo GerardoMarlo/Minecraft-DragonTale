@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "m:ostrich",
+      "min_engine_version": "1.12.0",
+      "materials": {
+        "default": "chicken",
+        "legs": "chicken_legs"
+      },
+      "textures": {
+        "default": "textures/entity/ostrich"
+      },
+      "geometry": {
+        "default": "geometry.ostrich"
+      },
+      "animations": {
+       "fly": "animation.ostrich.fly",
+        "move": "animation.ostrich.walk",
+        "baby_transform": "animation.ostrich.baby_transform",
+        "angry": "animation.ostrich.angry",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          { "angry": "query.has_target"},
+          { "move": "query.modified_move_speed*1" },
+         { "look_at_target": "!query.is_moving" },
+          { "fly" : "!query.is_on_ground" },
+          { "baby_transform": "query.is_baby" }
+        ]
+      },
+      "render_controllers": [ "controller.render.chicken" ],
+      "spawn_egg": {
+          "base_color": "#9B5600",
+          "overlay_color": "#BBBBBB"
+      }
+    }
+  }
+}

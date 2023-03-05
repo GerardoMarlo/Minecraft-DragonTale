@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "m:seal",
+      "materials": { "default": "dolphin" },
+      "textures": {
+               "ver1": "textures/entity/seal/ver1",
+				"ver2": "textures/entity/seal/ver2",
+				"ver3": "textures/entity/seal/ver3",
+				"ver4": "textures/entity/seal/ver4",
+				"ver5": "textures/entity/seal/ver5"
+      },
+      "geometry": {
+        "default": "geometry.seal"
+      },
+      "animations": {
+      "land" : "animation.seal.land",
+      "stop": "animation.seal.stand",
+       "look_at_target": "animation.common.look_at_target",
+        "move": "animation.dolphin.move",
+        "general": "controller.animation.dolphin.general"
+      },
+          "scripts": {
+        "animate": [
+        {"look_at_target": "!query.is_in_water" },
+        { "land": "query.modified_move_speed*2&&!query.is_in_water&&query.is_moving" },
+        { "stop": "query.is_standing" },
+        {"general": "query.is_in_water" }
+        ]
+      },
+      "render_controllers": [ "controller.render.seal" ],
+      "spawn_egg": {
+        "base_color": "#8EA7B7",
+       "overlay_color": "#2C3A82"
+      }
+    }
+  }
+}

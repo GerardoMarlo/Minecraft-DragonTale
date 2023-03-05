@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.alpaca.baby": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [-0.3, 0, 0],
+					"scale": [1.6, 1.6, 1.6]
+				},
+				"tail": {
+					"position": [0.3, -8, -4],
+					"scale": [1.7, 1.7, 1.7]
+				}
+			}
+		}
+	}
+}

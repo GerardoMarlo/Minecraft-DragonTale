@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:gorilla",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/gorilla"
+			},
+			"geometry": {
+				"default": "geometry.gorilla"
+			},
+			"animations": {
+			"walk": "animation.gorilla.walk",
+			"idle": "animation.gorilla.idle",
+			"sit": "animation.gorilla.sit",
+			"eat": "animation.gorilla.eat",
+			"sitt": "controller.animation.sit",
+           "look_at_target": "animation.common.look_at_target"
+			},
+			      "scripts": {
+        "animate": [
+        "sitt",
+           {"eat" : "query.is_eating" },
+        { "idle": "!query.has_target" },
+        { "walk": "query.modified_move_speed*3" },
+         "look_at_target"
+        ]
+      },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#6A6A6A"
+			}
+		}
+	}
+}

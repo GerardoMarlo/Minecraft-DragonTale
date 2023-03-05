@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:raw_aardvark",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "m:raw_aardvark",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

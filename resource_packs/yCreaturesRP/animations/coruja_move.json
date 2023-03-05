@@ -1,0 +1,22 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.coruja_move.walk" : {
+			"bones" : {
+				"leg0" : {
+					"rotation" : [ "variable.tcos1 * 1.4", 0.0, 0.0 ]
+				},
+				"leg3" : {
+					"rotation" : [ "variable.tcos0 * 1.4", 0.0, 0.0 ]
+				},
+				"leg1" : {
+					"rotation" : [ "variable.tcos0 * 1.4", 0.0, 0.0 ]
+				},
+				"leg2" : {
+					"rotation" : [ "variable.tcos1 * 1.4", 0.0, 0.0 ]
+				}
+			},
+			"loop" : true
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "header": {
+    "pack_id": "24nighm0c4mpfp4qfcq4fc3",
+    "name": "Slendytubbies Addon v5.4",
+    "packs_version": "0.0.1",
+    "description": "Add-On by ArathNidoGamer",
+    "modules": [
+      {
+        "description": "Add-On by ArathNidoGamer",
+        "version": "0.0.1",
+        "uuid": "24nighm0c4mpfp4qfcq4fc3",
+        "type": "data"
+      }
+    ]
+  }
+}

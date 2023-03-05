@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:fish_bone",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "m:fish_bone",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

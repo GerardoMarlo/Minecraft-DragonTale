@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:bombardier_beetle",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/bombardier_beetle"
+			},
+			"geometry": {
+				"default": "geometry.bombardier_beetle"
+			},
+			   "animations": {
+          "walk": "animation.bombadier_beetle.walk",
+           "look_at_target": "animation.common.look_at_target"
+      },
+            "scripts": {
+        "animate": [
+          { "walk": "query.modified_move_speed*6" },
+          "look_at_target"
+        ]
+      },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#8C351C",
+				"overlay_color": "##5D5D5D"
+			}
+		}
+	}
+}

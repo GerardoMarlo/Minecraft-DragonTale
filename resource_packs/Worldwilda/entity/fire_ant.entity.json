@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:fire_ant",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/fire_ant"
+			},
+			"geometry": {
+				"default": "geometry.fire_ant"
+			},
+			"animations": {
+			"walk": "animation.ant.walk",
+			"idle": "animation.ant.idle",
+			"climb": "animation.ant.climb",
+	   "look_at_target": "animation.common.look_at_target"
+			},
+			   "scripts": {
+        "animate": [
+         "idle",
+         {"climb": "query.is_wall_climbing"},
+         {"walk": "query.is_wall_climbing"},
+        { "walk": "query.modified_move_speed*3" },
+         {"look_at_target": "!query.is_wall_climbing"}
+        ]
+      },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#5e1e1e",
+				"overlay_color": "#2e2e2e"
+			}
+		}
+	}
+}

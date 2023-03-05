@@ -1,0 +1,81 @@
+{
+	"format_version": "1.19.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "m:ant_block_colonie",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"events":{
+		"spawn_ants": {
+				"randomize": [
+					{
+						"weight": 20,
+						"run_command": {
+							"command": [
+							"playsound block.beehive.enter @a [r=16]"
+							]
+						}
+					},
+					{
+						"weight": 5,
+						"run_command": {
+							"command": [
+							"summon m:fire_ant ~3 ~ ~",
+							"playsound block.beehive.enter @a [r=16]"
+							]
+						}
+					}
+				]
+			},
+		"charge": {
+		"run_command": {
+					"command": [
+						"setblock ~ ~ ~ m:ant_block_full",
+						"playsound block.beehive.enter @a [r=16]"
+					]
+				}
+		    },
+		"spawn_queen": {
+		"run_command": {
+					"command": [
+						"summon m:fire_ant ~ ~ ~ queen",
+						"playsound block.beehive.exit @a [r=16]"
+					]
+				}
+		    }
+		},
+		"components": {
+			"minecraft:collision_box": true,
+		  "minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.6
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+              "minecraft:on_placed": {
+				"event": "spawn_ants",
+				"target": "self"
+			},
+			"minecraft:on_step_on": {
+				"event": "charge",
+				"condition": "query.has_any_family('fire_ant')",
+				"target": "self"
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "spawn_queen",
+				"target": "self"
+			},
+			"minecraft:geometry": "geometry.ant_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ant_block_colonie",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#82490f"
+		}
+	}
+}

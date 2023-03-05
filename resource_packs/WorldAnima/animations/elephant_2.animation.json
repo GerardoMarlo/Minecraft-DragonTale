@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.elephant.sit": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"leg1": {
+					"rotation": [0, 0, 0]
+				},
+				"leg1_1": {
+					"rotation": [90, 0, 0],
+					"position": [0, -3.2, -0.5]
+				},
+				"leg0_1": {
+					"rotation": [90, 0, 0],
+					"position": [0, -3.2, -0.5]
+				},
+				"leg2_1": {
+					"rotation": [90, 0, 0],
+					"position": [0, -3.2, -0.5]
+				},
+				"leg3_1": {
+					"rotation": [90, 0, 0],
+					"position": [0, -3.2, -0.5]
+				},
+				"bone5": {
+					"position": [0, -5, 0]
+				},
+				"elefante": {
+					"position": [0, -3, 0]
+				}
+			}
+		}
+	}
+}

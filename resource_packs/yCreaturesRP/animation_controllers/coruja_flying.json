@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.coruja.fly": {
+      "states": {
+        "default": {
+          "transitions": [ { "fly": "query.is_chested" } ]
+        },
+        "fly": {
+          "animations": [ { "fly": [] } ],
+          "transitions": [ { "default": "!query.is_chested" } ]
+        }
+      }
+    }
+  }
+}

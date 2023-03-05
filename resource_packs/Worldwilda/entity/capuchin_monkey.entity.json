@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:capuchin_monkey",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/capuchin_monkey"
+			},
+			"geometry": {
+				"default": "geometry.capuchin_monkey"
+			},
+			"animations": {
+			"walk": "animation.capuchin.walk",
+			"sit": "animation.capuchin.sit",
+			"climb": "animation.capuchin.climb",
+			  "sitt": "controller.animation.sit",
+			   "look_at_target": "animation.common.look_at_target"
+			},
+			   "scripts": {
+        "animate": [
+         "sitt",
+         {"climb": "query.is_wall_climbing"},
+        { "walk": "query.modified_move_speed*2" },
+         "look_at_target"
+        ]
+      },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#242424",
+				"overlay_color": "#f2d7a1"
+			}
+		}
+	}
+}

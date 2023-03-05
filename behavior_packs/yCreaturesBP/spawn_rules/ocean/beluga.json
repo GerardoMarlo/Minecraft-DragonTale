@@ -1,0 +1,33 @@
+/// Copyright, all Rights Reserved///All files are protected by @ GabrielCas29007, Copying or modifying these files is subject to copyright charged to their owner///
+
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "ycreatures:trial_beluga",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+
+        "minecraft:weight": {
+          "default": 6
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 4
+        },
+        "minecraft:density_limit": {
+          "surface": 5,
+          "underground": 0
+        },
+        "minecraft:biome_filter": [
+          { "test": "has_biome_tag", "operator": "==", "value": "ocean" },
+          { "test": "has_biome_tag", "operator": "!=", "value": "warm"}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.hipo.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+         				"look_at_target",
+						{
+							"walk" : "query.modified_move_speed"
+						}
+					],
+					"transitions" : [
+						{
+							"swim" : "query.is_in_water"
+						},
+						{
+							"attack" : "query.has_target"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"swim" : {
+					"animations" : [ "swim" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_in_water"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"attack" : {
+					"animations" : [ "attack", "walk" ],
+					"transitions" : [
+						{
+							"default" : "!query.has_target"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

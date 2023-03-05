@@ -1,0 +1,17 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "§5§l§oBy MauBasSick §1TW--> §4@_MauBasSick_",
+        "name": "§lFlying Broom BP",
+        "uuid": "d07f6510-e414-11ea-87d0-0242ac130003",
+        "version": [0, 0, 1]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "data",
+            "uuid": "da15dcc6-e414-11ea-87d0-0242ac130003",
+            "version": [0, 0, 1]
+        }
+    ]
+}

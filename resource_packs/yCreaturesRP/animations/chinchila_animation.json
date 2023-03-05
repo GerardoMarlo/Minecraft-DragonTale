@@ -1,0 +1,108 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.chinchila.base": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg4": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.chinchila.sit": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-15, 0, 0],
+					"position": [0, 0, -1]
+				},
+				"head": {
+					"position": [0, 1, 0]
+				},
+				"leg2": {
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"position": [0, 0, 1]
+				},
+				"leg4": {
+					"position": [0, 0, 1]
+				},
+				"tail": {
+					"position": [0, -1, 0]
+				}
+			}
+		},
+		"animation.chinchila.walk": {
+			"loop": true,
+			"animation_length": 0.6667,
+			"bones": {
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 2],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, -2],
+						"0.6667": [0, 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, -2],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, 2],
+						"0.6667": [0, 0, 0]
+					}
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, -2],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, 2],
+						"0.6667": [0, 0, 0]
+					}
+				},
+				"leg4": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 2],
+						"0.3333": [0, 0, 0],
+						"0.5": [0, 0, -2],
+						"0.6667": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "item",
+                "name": "m:gazelle_horn"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "killed_by_player"
+            }
+        ]
+    }
+  ]
+}

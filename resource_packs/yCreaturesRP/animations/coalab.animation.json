@@ -1,0 +1,77 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.coalab.base": {
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+    "animation.coalab.move": {
+        "loop": true,
+         "bones": {
+           "leg0": { "rotation": [ "Math.cos(query.modified_distance_moved * 18.17) * 28.1 * query.modified_move_speed", 0.0, 0.0 ] },
+           "leg3": { "rotation": [ "Math.cos(query.modified_distance_moved * 18.17 + 180.0) * 28.1 * query.modified_move_speed", 0.0, 0.0 ] },
+           "leg1": { "rotation": [ "Math.cos(query.modified_distance_moved * 18.17 + 180.0) * 28.1 * query.modified_move_speed", 0.0, 0.0 ] },
+           "leg2": { "rotation": [ "Math.cos(query.modified_distance_moved * 18.17) * 28.1 * query.modified_move_speed", 0.0, 0.0 ] }
+            }
+        },
+		"animation.coalab.sit": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [5, 0, 0],
+					"position": [0, -4, 0]
+				},
+				"leg0": {
+					"rotation": [-35, 0, -90],
+					"position": [8, -2, -4]
+				},
+				"leg1": {
+					"rotation": [25, 0, 95],
+					"position": [-7, -1, 1]
+				},
+				"leg3": {
+					"rotation": [20, 0, -90],
+					"position": [9, -2, 2]
+				},
+				"leg2": {
+					"rotation": [-15, 0, 75],
+					"position": [-5, -3, -2]
+				},
+				"tail": {
+					"position": [0, -3, 0]
+				},
+				"head": {
+					"position": [0, -6, 0]
+				}
+			}
+		}
+	}
+}

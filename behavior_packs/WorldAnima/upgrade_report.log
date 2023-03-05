@@ -1,0 +1,20 @@
+{
+   "errors" : null,
+   "location" : {
+      "fs" : 2,
+      "path" : "C:/Users/Usuario/AppData/Local/Packages/Microsoft.MinecraftUWP_8wekyb3d8bbwe/LocalState/games/com.mojang/behavior_packs/Slendytubbies BehaviorPack"
+   },
+   "upgraded" : true,
+   "warnings" : [
+      {
+         "key" : 13,
+         "parameters" : [ "/header/pack_id", "79c4791d-13eb-3115-b07e-de054094d533" ],
+         "type" : 2
+      },
+      {
+         "key" : 13,
+         "parameters" : [ "/modules/0/uuid", "c8a20a09-8101-3c80-9dc5-730ca938506e" ],
+         "type" : 2
+      }
+   ]
+}

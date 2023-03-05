@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:mammoth",
+      "materials": { "default": "slime" },
+      "textures": {
+        "blue": "textures/entity/elephants/mammoth_chest",
+        "green": "textures/entity/elephants/mammoth_chest",
+        "red_blue": "textures/entity/elephants/mammoth",
+        "yellow_blue": "textures/entity/elephants/mammoth_chest",
+        "grey": "textures/entity/elephants/mammoth_chest"
+      },
+      "geometry": { "default": "geometry.mammoth" },
+      "animations": {
+        "setup": "animation.elephant.idle",
+        "look_at_target": "animation.common.look_at_target",
+        "walk": "animation.elephant.walk",
+        "wolf_sitting": "animation.elephant.sit",
+		"casting": "animation.elephant.celebrate",
+		"celebrating": "animation.elephant.celebrate",
+		"riding.legs": "animation.elephant.celebrate",
+        "baby_transform": "animation.llama.baby_transform"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+				{
+					"general": "controller.animation.subaru_duck.general" 
+				}
+      ],
+      "render_controllers": [ "controller.render.parrot" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_mammoth",
+        "texture_index": 0
+      }
+    }
+  }
+}

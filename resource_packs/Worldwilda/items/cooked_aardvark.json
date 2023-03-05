@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:cooked_aardvark",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "m:cooked_aardvark",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:hornbill",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/hornbill"
+			},
+			"geometry": {
+				"default": "geometry.hornbill"
+			},
+			"animations": {
+			"fly": "animation.hornbill.fly",
+			"idle": "animation.hornbill.idle",
+         "look_at_target": "animation.common.look_at_target"
+			},
+       "scripts": {
+        "animate": [
+        "idle",
+          "look_at_target",
+          { "fly" : "!query.is_on_ground&&query.modified_move_speed*3" }
+        ]
+      },
+			
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#ffc340",
+				"overlay_color": "#0d4474"
+			}
+		}
+	}
+}

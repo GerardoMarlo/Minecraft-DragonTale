@@ -1,0 +1,59 @@
+{
+  "format_version": "1.8.0",
+	"animations": {
+  		"animation.jabuti.base": {
+			"bones": {
+				"leg2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.jabuti.sit": {
+			"loop": true,
+			"bones": {
+				"leg2": {
+					"position": [0, -1, 0]
+				},
+				"leg1": {
+					"position": [0, -1, 0]
+				},
+				"body": {
+					"position": [0, -4, 0]
+				},
+				"leg3": {
+					"position": [0, -1, 0]
+				},
+				"leg0": {
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"position": [0, -4, 8]
+				},
+				"tail": {
+					"position": [0, -4, -3]
+				}
+			}
+		}
+    }
+}

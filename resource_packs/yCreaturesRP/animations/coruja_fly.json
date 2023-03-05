@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.coruja.fly": {
+			"loop": true,
+			"animation_length": 1.00667,
+			"bones": {
+				"body": {
+					"rotation": [45, 0, 0],
+					"position": [0, 2, 4]
+				},
+				"head": {
+					"rotation": [-35, 0, 0],
+					"position": [0, 2, -3]
+				},
+				"tail": {
+					"rotation": [-25, 0, 0],
+					"position": [0, 2, -1]
+				},
+				"wing0": {
+					"rotation": [0, 0, -430],
+					"position": [7, 3, 0]
+				},
+				"wing1": {
+					"rotation": [0, 0, -280],
+					"position": [-9, 2, 0]
+				}
+			}
+		}
+	}
+}

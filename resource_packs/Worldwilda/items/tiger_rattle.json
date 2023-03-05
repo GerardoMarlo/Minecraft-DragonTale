@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:tiger_rattle",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "m:tiger_rattle",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+	"format_version": "1.19.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "m:water_container",
+			"menu_category": {
+				"category": "construction"
+			},
+			"properties": {
+				"m:filled": [
+					false,
+					true
+				]
+			} 
+   },
+		"events": {
+			"m:fill": {
+				"sequence": [
+					{
+						"condition": "q.is_item_name_any('slot.weapon.mainhand',0, 'minecraft:bucket') && q.block_property('m:filled')==true",
+						"set_block_property": {
+							"m:filled": false
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"command": [
+							     "playsound random.splash @s",
+								"give @s water_bucket"
+							],
+							"target": "player"
+						}
+					}, 
+					{
+						"condition": "q.is_item_name_any('slot.weapon.mainhand',0, 'minecraft:water_bucket') && q.block_property('m:filled')==false",
+						"set_block_property": {
+							"m:filled": true
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"command": [
+							"playsound random.splash @s",
+								"give @s bucket"
+							],
+							"target": "player"
+						}
+					} 
+				] 
+			}
+		},
+		"components": {
+			"minecraft:on_interact": {
+      "event":"m:fill"
+			},
+			"minecraft:loot": "loot_tables/blocks/water_container_block_drop.json",
+			"minecraft:selection_box": {
+				"origin": [ -8.0, 0, -8.0 ],
+				"size": [ 16, 9, 16 ]
+			},
+			"minecraft:collision_box": {
+				"origin": [ -8.0, 0, -8.0 ],
+				"size": [ 16, 9, 16 ]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.4
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2.4
+			},
+			"minecraft:geometry": "geometry.water_container",
+			"minecraft:light_dampening": 12,
+			"minecraft:map_color": "#98bbfd"
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('m:filled')==true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "water_container",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('m:filled')==false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "empty_water_container",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			} 
+		]
+	}
+}

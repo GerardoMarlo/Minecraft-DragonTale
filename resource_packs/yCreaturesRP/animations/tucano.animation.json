@@ -1,0 +1,211 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tucano.base": {
+			"loop": true,
+			"bones": {
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.tucano.moving": {
+			"loop": true,
+			"bones": {
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.tucano.dance": {
+			"loop": true,
+			"bones": {
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.tucano.sitting": {
+			"loop": true,
+			"bones": {
+				"wing1": {
+					"position": [0, -1, 0]
+				},
+				"wing0": {
+					"position": [0, -1, 0]
+				},
+				"body": {
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"position": [0, -1, 0]
+				},
+				"tail": {
+					"position": [0, -1, 0]
+				}
+			}
+		},
+		"animation.tucano.flying": {
+			"loop": true,
+			"animation_length": 1.02667,
+			"bones": {
+				"leg1": {
+					"rotation": {
+						"0.0": [20, 0, 0],
+						"0.4833": [15, 0, 0],
+						"1.0": [20, 0, 0]
+					},
+					"position": [0, 2, 1]
+				},
+				"leg0": {
+					"rotation": {
+						"0.0": [20, 0, 0],
+						"0.4833": [25, 0, 0],
+						"1.0": [20, 0, 0]
+					},
+					"position": [0, 2, 1]
+				},
+				"wing1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 40, 0],
+						"1.0167": [0, 0, 0]
+					},
+					"position": [0, 2, 0]
+				},
+				"wing0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4833": [0, -40, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 2, 0],
+						"0.4833": [0, 2, 2],
+						"1.0": [0, 2, 0]
+					}
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 3, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 2, 0]
+				},
+				"tail": {
+					"rotation": [-35, 0, 0],
+					"position": [0, 6, 0]
+				}
+			}
+		},
+		"animation.tucano.standing": {
+			"loop": true,
+			"bones": {
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wing0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

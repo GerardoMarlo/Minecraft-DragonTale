@@ -1,0 +1,68 @@
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"horn_block": {
+			"textures": "textures/blocks/horn_block.png"
+		},
+		"cactus_flower": {
+			"textures": "textures/blocks/cactus_flower.png"
+		},
+		"purple_flower_cactus": {
+			"textures": "textures/blocks/purple_flower_cactus.png"
+		},
+		"double_cactus": {
+			"textures": "textures/blocks/double_cactus.png"
+		},
+		"dry_grass": {
+			"textures": "textures/blocks/dry_grass.png"
+		},
+		"ostrich_egg0": {
+			"textures": "textures/blocks/ostrich_egg/ostrich_egg0.png"
+		},
+		"ostrich_egg1": {
+			"textures": "textures/blocks/ostrich_egg/ostrich_egg1.png"
+		},
+		"ostrich_egg2": {
+			"textures": "textures/blocks/ostrich_egg/ostrich_egg2.png"
+		},
+		"grid_fence": {
+			"textures": "textures/blocks/grid_fence.png"
+		},
+		"empty_water_container": {
+			"textures": "textures/blocks/water_container/empty_water_container.png"
+			},
+		"water_container": {
+			"textures": "textures/blocks/water_container/water_container.png"
+			},
+			"penguin_egg": {
+			"textures": "textures/blocks/penguin_egg/penguin_egg.png"
+		},
+		"penguin_egg0": {
+			"textures": "textures/blocks/penguin_egg/penguin_egg0.png"
+		},
+		"penguin_egg1": {
+			"textures": "textures/blocks/penguin_egg/penguin_egg1.png"
+		},
+		"cassowary_egg": {
+			"textures": "textures/blocks/cassowary_egg/cassowary_egg.png"
+		},
+		"cassowary_egg0": {
+			"textures": "textures/blocks/cassowary_egg/cassowary_egg0.png"
+		},
+		"cassowary_egg1": {
+			"textures": "textures/blocks/cassowary_egg/cassowary_egg1.png"
+		},
+		"ant_block": {
+			"textures": "textures/blocks/ant_block1.png"
+		},
+		"ant_block_full": {
+			"textures": "textures/blocks/ant_block3.png"
+		},
+		"ant_block_colonie": {
+			"textures": "textures/blocks/ant_block2.png"
+		}
+	}
+}

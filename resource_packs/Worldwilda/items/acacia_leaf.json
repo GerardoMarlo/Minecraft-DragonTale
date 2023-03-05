@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:acacia_leaf",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "m:acacia_leaf",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

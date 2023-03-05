@@ -1,0 +1,29 @@
+{
+	"format_version": "1.19.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "m:grid_fence",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+		     "minecraft:loot": "loot_tables/blocks/grid_fence_block_drop.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0
+			},
+			"minecraft:geometry": "geometry.grid_fence",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "grid_fence",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:map_color": "#555555"
+		}
+	}
+}

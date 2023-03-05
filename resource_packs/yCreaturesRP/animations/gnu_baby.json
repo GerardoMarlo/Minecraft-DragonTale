@@ -1,0 +1,44 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.gnu.baby_transform": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [0, 0, 0],
+					"scale": [1.5, 1.5, 1.5]
+				},
+				"head2": {
+					"position": [0, 1, -2]
+				},
+				"head7": {
+					"position": [5, -3, 0]
+				},
+				"head9": {
+					"rotation": [-45, 25, 0],
+					"position": [6, -23, -21]
+				},
+				"head10": {
+					"rotation": [0, 0, 0],
+					"position": [-5, -3, 0]
+				},
+				"head12": {
+					"rotation": [-45, -25, 0],
+					"position": [-6, -23, -21]
+				},
+				"head15": {
+					"position": [0, 2, -1]
+				},
+				"head16": {
+					"position": [0, 2, -1]
+				},
+				"head17": {
+					"position": [0, 2, 0]
+				},
+				"body4": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,82 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+      "controller.animation.movement_fly.move": {
+        "states": {
+          "default": {
+            "animations": [
+              {
+                "walking": "query.is_on_ground * query.modified_move_speed"
+              }
+            ],
+            "transitions": [
+              {
+                "fly": "!query.is_on_ground && query.head_x_rotation(0) < 0 && query.ground_speed > 4"
+              },
+              {
+                "glide": "!query.is_on_ground && query.head_x_rotation(0) >= 0 && query.ground_speed > 4"
+              },
+              {
+                "flyRest": "!query.is_on_ground && query.ground_speed < 4"
+              }
+            ],
+            "blend_transition": 0.5
+          },
+          "fly": {
+            "animations": [
+              "flying",
+              "hrotation"
+            ],
+            "transitions": [
+              {
+                "default": "query.is_on_ground"
+              },
+              {
+                "glide": "!query.is_on_ground && query.head_x_rotation(0) >= 0 && query.ground_speed > 4"
+              },
+              {
+                "flyRest": "!query.is_on_ground && query.ground_speed < 4"
+              }
+            ],
+            "blend_transition": 0.5
+          },
+          "glide": {
+            "animations": [
+              "fly_open",
+              "hrotation"
+            ],
+            "transitions": [
+              {
+                "default": "query.is_on_ground"
+              },
+              {
+                "flyRest": "!query.is_on_ground && query.ground_speed < 4"
+              },
+              {
+                "fly": "!query.is_on_ground && query.head_x_rotation(0) < 0 && query.ground_speed > 4"
+              }
+            ],
+            "blend_transition": 0.5
+          },
+          "flyRest": {
+            "animations": [
+              "fly_rest",
+              "hrotation"
+            ],
+            "transitions": [
+              {
+                "default": "query.is_on_ground"
+              },
+              {
+                "fly": "!query.is_on_ground && query.head_x_rotation(0) < 0 && query.ground_speed > 4"
+              },
+              {
+                "glide": "!query.is_on_ground && query.head_x_rotation(0) >= 0 && query.ground_speed > 4"
+              }
+            ],
+            "blend_transition": 0.5
+          }
+        }
+      }
+    }
+  }

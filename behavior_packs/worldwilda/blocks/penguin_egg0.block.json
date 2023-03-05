@@ -1,0 +1,53 @@
+{
+	"format_version": "1.19.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "m:penguin_egg0"
+		},
+		"events": {
+		"m:hatch1": {
+		"run_command": {
+					"command": [
+						"setblock ~ ~ ~ m:penguin_egg1",
+						"playsound block.turtle_egg.crack @a [r=16]"
+					]
+				}
+		    }
+		},
+		"components": {
+		"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "m:hatch1",
+					"target": "self"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [ -3, 0, -4 ],
+				"size": [ 6, 9, 6 ]
+			},
+			"minecraft:collision_box": {
+				"origin": [ -3, 0, -4 ],
+				"size": [ 6, 9, 6 ]
+			},
+			        "minecraft:loot": "loot_tables/blocks/penguin_egg_block.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3.7
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 20,
+				"catch_chance_modifier": 5
+			},
+			"minecraft:geometry": "geometry.penguin_egg",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "penguin_egg0",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#ffffff"
+		}
+	}
+}

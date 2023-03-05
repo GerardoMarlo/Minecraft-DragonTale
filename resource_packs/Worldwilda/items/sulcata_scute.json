@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:sulcata_scute",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "m:sulcata_scute",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

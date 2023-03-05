@@ -1,0 +1,55 @@
+{
+  "pa:trap_sand": {
+    "textures": "pa_trap_sand",
+    "sound": "normal"
+  },
+  "pa:trap_planks": {
+    "textures": "pa_trap_planks",
+    "sound": "normal"
+  },
+  "pa:electric_trap": {
+    "textures": "pa_electric_trap",
+    "sound": "grass"
+  },
+  "pa:snow_trap": {
+    "textures": "pa_snow_trap",
+    "sound": "grass"
+  },
+  "pa:cold_trap": {
+    "textures": "pa_cold_trap",
+    "sound": "grass"
+  },
+  "pa:tnt_trap": {
+    "textures": "pa_tnt_trap",
+    "sound": "grass"
+  },
+  "pa:lava_trap": {
+    "textures": "pa_lava_trap",
+    "sound": "grass"
+  },
+  "pa:trap_snow": {
+    "textures": "pa_trap_snow",
+    "sound": "normal"
+  },
+  "pa:trap_stone": {
+    "textures": "pa_trap_stone",
+    "sound": "normal"
+  },
+  "pa:trap_grass": {
+    "textures": "pa_trap_grass",
+    "sound": "normal"
+  },
+  "pa:trap": {
+    "textures": "pa_trap",
+    "sound": "normal"
+  },
+  "pa:trap_table": {
+    "textures": "pa_trap_table",
+    "sound": "wood"
+  },
+  "format_version": [
+    1,
+    1,
+    0
+  ]
+}

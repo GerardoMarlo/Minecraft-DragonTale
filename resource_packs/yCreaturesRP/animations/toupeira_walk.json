@@ -1,0 +1,57 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.toupeira.base": {
+			"loop": true
+		},
+		"animation.toupeira.walk": {
+			"loop": true,
+			"animation_length": 2.08,
+			"bones": {
+				"bone5": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5167": [120, 0, 0],
+						"1.0333": [0, 0, 0],
+						"1.5667": [-80, 0, 0],
+						"2.0833": [0, 0, 0]
+					}
+				},
+				"bone4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5167": [-80, 0, 0],
+						"1.0333": [0, 0, 0],
+						"1.5667": [120, 0, 0],
+						"2.0833": [0, 0, 0]
+					}
+				},
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5167": [70, 0, 0],
+						"1.0333": [0, 0, 0],
+						"1.5667": [-55, 0, 0],
+						"2.0833": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.toupeira.sit": {
+			"loop": true,
+			"bones": {
+				"bodyb": {
+					"rotation": [-25, 0, 0],
+					"position": [0, 3, 0]
+				},
+				"bone7": {
+					"position": [0, 0, 0]
+				},
+				"bone": {
+					"rotation": [-15, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

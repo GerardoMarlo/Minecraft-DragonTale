@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_7d1d9cfr"
+    },
+    "tags": [
+      "traptable"
+    ],
+    "pattern": [
+      "AAA",
+      "BBB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:tallgrass",
+        "data": 1
+      },
+      "B": {
+        "item": "minecraft:copper_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "pa:electric_trap",
+      "count": 1
+    }
+  }
+}

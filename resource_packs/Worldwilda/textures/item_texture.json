@@ -1,0 +1,48 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+          "m:bombardier_beetle_item": {
+      "textures": "textures/items/bombardier_beetle_item"
+    },
+          "m:fish_bone": {
+      "textures": "textures/items/fish_bone"
+    },
+        "m:raw_aardvark": {
+      "textures": "textures/items/raw_aardvark"
+    },
+            "m:cooked_aardvark": {
+      "textures": "textures/items/cooked_aardvark"
+    },
+              "m:fire_ant_item": {
+      "textures": "textures/items/fire_ant_item"
+      },
+                "m:sulcata_scute": {
+      "textures": "textures/items/sulcata_turtle_scute"
+      },
+             "m:road_runner_feather": {
+      "textures": "textures/items/road_runner_feather"
+    },
+              "m:acacia_leaf": {
+      "textures": "textures/items/acacia_leaf"
+    },
+      "m:raw_ostrich": {
+      "textures": "textures/items/raw_ostrich"
+    },
+          "m:raw_jerboa": {
+      "textures": "textures/items/raw_jerboa"
+    },
+       "m:cooked_ostrich": {
+      "textures": "textures/items/cooked_ostrich"
+    },
+            "m:larvae": {
+      "textures": "textures/items/larvae"
+    },
+            "m:tiger_rattle": {
+      "textures": "textures/items/tiger_rattle"
+    },
+          "m:gazelle_horn": {
+      "textures": "textures/items/gazelle_horn"
+    }
+  }
+}

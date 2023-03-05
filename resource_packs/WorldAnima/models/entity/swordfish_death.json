@@ -1,0 +1,100 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.swordfish_death",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "swordfish_death",
+					"pivot": [4, 2.5, -3],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [8, -3, -23.6], "size": [1, 16, 16], "uv": [0, 79], "mirror": true},
+						{"origin": [8, -3, -7.6], "size": [1, 16, 16], "uv": [0, 79], "mirror": true},
+						{"origin": [8, 13, -21.6], "size": [1, 1, 14], "uv": [47, 80], "mirror": true},
+						{"origin": [8, 13, -7.6], "size": [1, 1, 14], "uv": [47, 80], "mirror": true},
+						{"origin": [8, 14, -20.6], "size": [1, 1, 13], "uv": [0, 114], "mirror": true},
+						{"origin": [8, -5, -20.6], "size": [1, 1, 13], "uv": [0, 114], "mirror": true},
+						{"origin": [8, 14, -7.6], "size": [1, 1, 13], "uv": [0, 114], "mirror": true},
+						{"origin": [8, -5, -7.6], "size": [1, 1, 13], "uv": [0, 114], "mirror": true},
+						{"origin": [8, -4, -21.6], "size": [1, 1, 14], "uv": [47, 80], "mirror": true},
+						{"origin": [8, -4, -7.6], "size": [1, 1, 14], "uv": [47, 80], "mirror": true}
+					]
+				},
+				{
+					"name": "cabeza",
+					"parent": "swordfish_death",
+					"pivot": [4, 0, -12],
+					"mirror": true,
+					"cubes": [
+						{"origin": [0, 1, -23], "size": [8, 8, 10], "inflate": -0.3, "uv": [0, 0]},
+						{"origin": [3, 2.5, -31.7], "size": [2, 2, 10], "inflate": -0.3, "uv": [6, 66]},
+						{"origin": [3, 2.5, -36.8], "size": [2, 2, 10], "inflate": -0.55, "uv": [6, 66]},
+						{"origin": [3, 2.5, -41.8], "size": [2, 2, 10], "inflate": -0.8, "uv": [6, 66]},
+						{"origin": [3, 1.35, -26.45], "size": [2, 2, 5], "inflate": -0.45, "pivot": [4, 3.1, -22.7], "rotation": [-20, 0, 0], "uv": [0, 121]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "swordfish_death",
+					"pivot": [4, 0, -13],
+					"mirror": true,
+					"cubes": [
+						{"origin": [0, 0, -13.6], "size": [8, 9, 13], "inflate": -0.05, "uv": [0, 18]},
+						{"origin": [3.5, 3.95, -12.42045], "size": [1, 7, 8], "inflate": -0.3, "pivot": [3, -3.3, -9.6], "rotation": [-15, 0, 0], "uv": [69, 31]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "swordfish_death",
+					"pivot": [4, 2.5, -5],
+					"rotation": [-5, 0, 0],
+					"mirror": true
+				},
+				{
+					"name": "bone",
+					"parent": "tail",
+					"pivot": [4, 2.5, -5],
+					"rotation": [5, 0, 0],
+					"cubes": [
+						{"origin": [1, 0.62012, 1.64891], "size": [6, 7, 12], "inflate": -0.8, "uv": [92, 109], "mirror": true},
+						{"origin": [1, 0.62012, -4.35109], "size": [6, 7, 8], "inflate": -0.55, "uv": [100, 21], "mirror": true},
+						{"origin": [3.5, -6.60614, 11.48312], "size": [1, 4, 6], "pivot": [0, 0, 0], "rotation": [45, 0, 0], "uv": [45, 50], "mirror": true},
+						{"origin": [3.5, 8.48312, 6.60614], "size": [1, 4, 6], "pivot": [0, 0, 0], "rotation": [-45, 0, 0], "uv": [45, 50], "mirror": true},
+						{"origin": [3.5, -2.28742, 17.13998], "size": [1, 4, 6], "inflate": -0.25, "pivot": [0, 0, 0], "rotation": [30, 0, 0], "uv": [45, 50], "mirror": true},
+						{"origin": [3.5, 5.36149, 13.51986], "size": [1, 4, 6], "inflate": -0.25, "pivot": [0, 0, 0], "rotation": [-30, 0, 0], "uv": [45, 50], "mirror": true},
+						{"origin": [3.5, 10.98312, -6.39386], "size": [1, 6, 6], "inflate": -0.25, "pivot": [4, 3, -9], "rotation": [-45, 0, 0], "uv": [79, 61], "mirror": true},
+						{"origin": [3.5, 5.98312, -6.39386], "size": [1, 6, 6], "inflate": -0.25, "pivot": [4, -2, -9], "rotation": [-45, 0, 0], "uv": [79, 61], "mirror": true}
+					]
+				},
+				{
+					"name": "back_fin",
+					"parent": "swordfish_death",
+					"pivot": [4, 6, -9],
+					"rotation": [-60, 0, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [3.5, 3.33038, -14.13827], "size": [1, 7, 8], "inflate": -0.25, "uv": [69, 31]}
+					]
+				},
+				{
+					"name": "left_fin",
+					"parent": "swordfish_death",
+					"pivot": [1, 1, -11],
+					"rotation": [0, 25, -20],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-6.74643, 1, -12.54378], "size": [8, 1, 4], "inflate": -0.25, "uv": [40, 0]}
+					]
+				}
+			]
+		}
+	]
+}

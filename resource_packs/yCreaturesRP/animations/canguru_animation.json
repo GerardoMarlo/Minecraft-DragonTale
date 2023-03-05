@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.canguru.walk": {
+			"loop": true,
+			"animation_length": 0.4,
+			"bones": {
+				"body0": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, 37, 0],
+						"0.4": [0, 0, 0]
+					}
+				},
+				"leg0a": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [60, 0, 0],
+						"0.4": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, -4, 2],
+						"0.4": [0, 0, 0]
+					}
+				},
+				"leg1a": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [60, 0, 0],
+						"0.4": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, -4, 3],
+						"0.4": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.canguru.setup": {
+			"loop": true,
+			"bones": {
+				"body0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

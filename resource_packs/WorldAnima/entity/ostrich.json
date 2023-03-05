@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:ostrich",
+      "materials": { "default": "slime", "armor": "stray_clothes" },
+      "textures": {
+        "default": "textures/entity/ostrich/ostrich_normal",
+        "reptil": "textures/entity/ostrich/reptil_armor",
+        "gold": "textures/entity/ostrich/gold_armor",
+        "iron": "textures/entity/ostrich/iron_armor",
+        "diamond": "textures/entity/ostrich/diamond_armor",
+        "citrine": "textures/entity/ostrich/citrine_armor",
+        "ruby": "textures/entity/ostrich/ruby_armor",
+        "emerald": "textures/entity/ostrich/emerald_armor",
+        "netherite": "textures/entity/ostrich/netherite_armor"
+      },
+      "geometry": {
+        "default": "geometry.ostrich",
+        "armor": "geometry.ostrich_armor"
+      },
+      "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.ostrich.sit"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.animals", "controller.render.rhinoceros_armor" ],
+      "spawn_egg": {
+        "texture": "egg_ostrich",
+        "texture_index": 0
+      }
+    }
+  }
+}

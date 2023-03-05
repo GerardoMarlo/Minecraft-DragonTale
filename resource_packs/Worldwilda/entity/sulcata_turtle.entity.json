@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "m:sulcata_turtle",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/sulcata_turtle"
+			},
+			"geometry": {
+				"default": "geometry.sulcata_turtle"
+			},
+			"animations": {
+			"walk": "animation.sulcata_turtle.walk",
+			"idle": "animation.sulcata_turtle.idle",
+            "sit": "animation.sulcata_turtle.sit",
+	        "look_at_target": "animation.common.look_at_target"
+			},
+			   "scripts": {
+        "animate": [
+         "idle",
+         {"sit": "query.is_illager_captain"},
+        { "walk": "query.modified_move_speed*4" },
+         "look_at_target"
+        ]
+      },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#7a5143",
+				"overlay_color": "#f2d2af"
+			}
+		}
+	}
+}
